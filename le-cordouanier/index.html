@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Le Cordouanier — Cordonnerie et clés, Paris 17e (proposition de site)</title>
+<meta name="description" content="Cordonnerie traditionnelle, reproduction de clés et de badges, gravure et photocopie, 10 rue Pierre Demours, Paris 17e.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&display=swap">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%237a2e1d'/%3E%3Cpath d='M10 6h6v13l7 3v4H9z' fill='%23f6efe4'/%3E%3C/svg%3E">
+<style>
+:root{--ink:#241913;--muted:#6b5a4e;--paper:#fbf7f1;--soft:#f3ebdf;--line:#e4d8c8;--leather:#7a2e1d;--leather-2:#5f2215;--brass:#b8862b;--ok:#2f7a4a;--radius:14px;--fd:'Fraunces',Georgia,serif;--fb:'Manrope',system-ui,sans-serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.6 var(--fb);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.proto{background:var(--ink);color:#f3ebdf;font-size:13.5px;text-align:center;padding:8px 16px}
+.proto a{color:#f0c56a}
+header{position:sticky;top:0;z-index:10;background:rgba(251,247,241,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.hd{display:flex;align-items:center;justify-content:space-between;gap:16px;height:68px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo svg{width:34px;height:34px;flex:none}
+.logo b{display:block;font:700 21px/1 var(--fd);letter-spacing:-.01em}
+.logo small{display:block;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:3px}
+.hd nav{display:flex;gap:26px;font-weight:600;font-size:15px}
+.hd nav a{text-decoration:none;color:var(--muted)}
+.hd nav a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:48px;padding:0 22px;border-radius:999px;background:var(--leather);color:#fff;font-weight:700;font-size:16px;text-decoration:none;border:0;cursor:pointer;transition:background .15s}
+.btn:hover{background:var(--leather-2)}
+.btn svg{width:18px;height:18px}
+.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
+.btn.ghost:hover{border-color:var(--ink);background:transparent}
+.btn.sm{min-height:42px;padding:0 18px;font-size:15px}
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;padding:64px 20px 72px}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--brass)}
+h1{font:700 clamp(36px,5.2vw,58px)/1.05 var(--fd);letter-spacing:-.02em;margin:14px 0 18px}
+h1 em{font-style:normal;color:var(--leather)}
+.lede{font-size:19px;color:var(--muted);max-width:34em;margin:0 0 28px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.status{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:600;font-size:15px}
+.dot{width:10px;height:10px;border-radius:50%;background:#b9a99a}
+.status.open .dot{background:var(--ok);box-shadow:0 0 0 4px rgba(47,122,74,.15)}
+.status.open{color:var(--ok)}
+.card-hero{background:var(--soft);border:1px solid var(--line);border-radius:22px;padding:30px;position:relative;overflow:hidden}
+.card-hero h2{font:700 15px/1 var(--fb);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 18px}
+.card-hero ul{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.card-hero li{display:flex;gap:14px;align-items:center;font-weight:600}
+.ico{width:44px;height:44px;border-radius:12px;background:#fff;border:1px solid var(--line);display:grid;place-items:center;flex:none;color:var(--leather)}
+.ico svg{width:24px;height:24px}
+.rating{display:flex;align-items:center;gap:10px;margin-top:22px;padding-top:20px;border-top:1px solid var(--line);font-size:15px;color:var(--muted)}
+.rating b{font:700 26px/1 var(--fd);color:var(--ink)}
+.stars{color:var(--brass);letter-spacing:2px}
+section.s{padding:80px 0}
+section.alt{background:var(--soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.sh{max-width:640px;margin-bottom:40px}
+h2.t{font:700 clamp(30px,3.6vw,42px)/1.1 var(--fd);letter-spacing:-.015em;margin:10px 0 12px}
+.sh p{color:var(--muted);margin:0}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.svc{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px}
+.svc h3{display:flex;align-items:center;gap:12px;font:700 22px/1.2 var(--fd);margin:0 0 14px}
+.svc ul{margin:0;padding:0;list-style:none;display:grid;gap:8px}
+.svc li{display:flex;gap:10px;color:var(--muted)}
+.svc li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--brass);margin-top:10px;flex:none}
+.svc .note{margin-top:16px;font-size:14.5px;color:var(--ink);font-weight:600}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;counter-reset:s}
+.step{padding:24px;border-left:3px solid var(--brass);background:#fff;border-radius:0 var(--radius) var(--radius) 0}
+.step::before{counter-increment:s;content:counter(s);font:700 34px/1 var(--fd);color:var(--leather)}
+.step h3{font:700 19px/1.3 var(--fb);margin:10px 0 6px}
+.step p{margin:0;color:var(--muted);font-size:16px}
+.quotes{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+blockquote{margin:0;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px;font:600 21px/1.4 var(--fd)}
+blockquote footer{font:500 14.5px/1.4 var(--fb);color:var(--muted);margin-top:14px}
+.info{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.box{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px}
+.box h3{font:700 22px/1.2 var(--fd);margin:0 0 16px}
+table{width:100%;border-collapse:collapse;font-size:16px}
+td{padding:9px 0;border-bottom:1px solid var(--line);vertical-align:top}
+td:last-child{text-align:right;font-variant-numeric:tabular-nums}
+tr.today td{font-weight:700;color:var(--leather)}
+tr:last-child td{border-bottom:0}
+.addr{font-size:18px;font-weight:600;margin:0 0 6px}
+.box p{color:var(--muted);margin:0 0 18px}
+.box .ctas{margin-top:8px}
+.faq details{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:0 22px;margin-bottom:10px}
+.faq summary{cursor:pointer;font-weight:700;padding:18px 0;list-style:none;display:flex;justify-content:space-between;gap:12px}
+.faq summary::after{content:"+";font:600 22px/1 var(--fb);color:var(--leather)}
+.faq details[open] summary::after{content:"–"}
+.faq details p{margin:0 0 18px;color:var(--muted)}
+.cta-band{background:var(--leather);color:#fff;border-radius:22px;padding:44px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.cta-band h2{font:700 clamp(26px,3vw,34px)/1.15 var(--fd);margin:0 0 6px}
+.cta-band p{margin:0;opacity:.85}
+.cta-band .btn{background:#fff;color:var(--leather)}
+.cta-band .btn:hover{background:var(--soft)}
+footer.ft{padding:40px 0 100px;color:var(--muted);font-size:14.5px}
+footer.ft .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.callbar{display:none}
+@media (max-width:860px){
+  .hd nav{display:none}
+  .hero{grid-template-columns:1fr;gap:32px;padding:40px 20px 56px}
+  .grid,.quotes,.info,.steps{grid-template-columns:1fr}
+  section.s{padding:56px 0}
+  .cta-band{padding:30px}
+  .callbar{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:20;gap:10px}
+  .callbar .btn{flex:1;box-shadow:0 8px 24px rgba(36,25,19,.25)}
+  .callbar .btn.ghost{background:var(--paper)}
+}
+</style>
+</head>
+<body>
+<div class="proto">Proposition de site non officielle, préparée pour Le Cordouanier par Jean Cazals. Informations à vérifier avec la boutique. <a href="https://client-contact.fr/">En savoir plus</a></div>
+<header>
+  <div class="wrap hd">
+    <a class="logo" href="#top" aria-label="Le Cordouanier, accueil">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="10" fill="#7a2e1d"/><path d="M13 8h8v16l9 4v5H11z" fill="#fbf7f1"/><path d="M11 33h19" stroke="#b8862b" stroke-width="2"/></svg>
+      <span><b>Le Cordouanier</b><small>Cordonnerie traditionnelle</small></span>
+    </a>
+    <nav aria-label="Navigation"><a href="#services">Services</a><a href="#horaires">Horaires</a><a href="#acces">Accès</a><a href="#questions">Questions</a></nav>
+    <a class="btn sm" href="tel:+33767755401">Appeler</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="wrap hero">
+  <div>
+    <div class="eyebrow">Paris 17e · Ternes – Pierre Demours</div>
+    <h1>Vos chaussures réparées, vos clés et badges <em>copiés sur place.</em></h1>
+    <p class="lede">Cordonnerie traditionnelle, reproduction de clés et de badges d'immeuble, gravure et photocopie, à deux pas de l'avenue des Ternes.</p>
+    <div class="ctas">
+      <a class="btn" href="tel:+33767755401"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>07 67 75 54 01</a>
+      <a class="btn ghost" href="https://www.google.com/maps/dir/?api=1&destination=10+Rue+Pierre+Demours+75017+Paris" target="_blank" rel="noopener">Itinéraire</a>
+    </div>
+    <div class="status" id="status" aria-live="polite"><span class="dot"></span><span id="status-t">Horaires ci-dessous</span></div>
+  </div>
+  <aside class="card-hero" aria-label="Ce que vous pouvez faire en boutique">
+    <h2>En boutique, sans rendez-vous</h2>
+    <ul>
+      <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 3h5v10l7 3v4H5z"/><path d="M5 20h14"/></svg></span>Talons, semelles, ressemelage</li>
+      <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8" cy="12" r="4"/><path d="M12 12h9M18 12v3M21 12v2"/></svg></span>Clés plates, de sécurité et de voiture</li>
+      <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3c4 0 7 3 7 7 0 5-7 11-7 11S5 15 5 10c0-4 3-7 7-7z"/><circle cx="12" cy="10" r="2"/></svg></span>Badges et bips d'immeuble</li>
+      <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20l4-1 11-11-3-3L5 16z"/><path d="M14 6l3 3"/></svg></span>Gravure de plaques</li>
+    </ul>
+    <div class="rating"><b>4,7</b><span><span class="stars" aria-hidden="true">★★★★★</span><br>sur Google (15 avis)</span></div>
+  </aside>
+</section>
+
+<section class="s alt" id="services">
+  <div class="wrap">
+    <div class="sh"><div class="eyebrow">Services</div><h2 class="t">Tout ce qu'on répare et reproduit ici</h2><p>Le prix vous est annoncé au comptoir, avant toute intervention.</p></div>
+    <div class="grid">
+      <article class="svc">
+        <h3><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 3h5v10l7 3v4H5z"/><path d="M5 20h14"/></svg></span>Cordonnerie</h3>
+        <ul><li>Talons et patins, femme et homme</li><li>Ressemelage et recollage</li><li>Bottes et chaussures abîmées</li><li>Coutures et petites réparations</li></ul>
+        <p class="note">Des chaussures que vous pensiez fichues ? Montrez-les au comptoir.</p>
+      </article>
+      <article class="svc">
+        <h3><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8" cy="12" r="4"/><path d="M12 12h9M18 12v3M21 12v2"/></svg></span>Clés et badges</h3>
+        <ul><li>Clés plates et clés de sécurité</li><li>Clés de voiture et télécommandes</li><li>Badges et bips d'immeuble</li></ul>
+        <p class="note">Apportez l'original : la copie se fait en boutique.</p>
+      </article>
+      <article class="svc">
+        <h3><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20l4-1 11-11-3-3L5 16z"/><path d="M14 6l3 3"/></svg></span>Gravure</h3>
+        <ul><li>Plaques de boîte aux lettres</li><li>Plaques d'interphone et de porte</li></ul>
+      </article>
+      <article class="svc">
+        <h3><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h4"/></svg></span>Photocopie et entretien</h3>
+        <ul><li>Photocopies</li><li>Semelles intérieures, cirages, lacets</li><li>Produits d'entretien du cuir</li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="s">
+  <div class="wrap">
+    <div class="sh"><div class="eyebrow">Comment ça se passe</div><h2 class="t">Simple, comme chez le cordonnier du quartier</h2></div>
+    <div class="steps">
+      <div class="step"><h3>Vous passez en boutique</h3><p>Sans rendez-vous, aux heures d'ouverture.</p></div>
+      <div class="step"><h3>On regarde et on vous donne le prix</h3><p>Avant toute réparation ou reproduction.</p></div>
+      <div class="step"><h3>Vous récupérez</h3><p>Sur place pour les clés, au délai annoncé pour les chaussures.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="s alt">
+  <div class="wrap">
+    <div class="sh"><div class="eyebrow">Avis</div><h2 class="t">4,7 sur 5 sur Google</h2><p>Extraits d'avis publics laissés sur la fiche Google de la boutique.</p></div>
+    <div class="quotes">
+      <blockquote>« Très rapide, d'une grande précision. »<footer>Avis Google, janvier</footer></blockquote>
+      <blockquote>« Excellents services et accueil très chaleureux. »<footer>Avis Google, juillet</footer></blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="s" id="horaires">
+  <div class="wrap info">
+    <div class="box">
+      <h3>Horaires</h3>
+      <table id="hours">
+        <tr data-d="1"><td>Lundi</td><td>Fermé</td></tr>
+        <tr data-d="2"><td>Mardi</td><td>9 h 30 – 13 h 30 · 15 h 30 – 18 h 50</td></tr>
+        <tr data-d="3"><td>Mercredi</td><td>9 h 30 – 13 h 30 · 15 h 30 – 18 h 50</td></tr>
+        <tr data-d="4"><td>Jeudi</td><td>9 h 30 – 13 h 30 · 15 h 30 – 18 h 50</td></tr>
+        <tr data-d="5"><td>Vendredi</td><td>9 h 30 – 13 h 30 · 15 h 30 – 18 h 50</td></tr>
+        <tr data-d="6"><td>Samedi</td><td>9 h 30 – 18 h 50</td></tr>
+        <tr data-d="0"><td>Dimanche</td><td>Fermé</td></tr>
+      </table>
+      <p style="margin:14px 0 0;font-size:14.5px">Fermé les jours fériés.</p>
+    </div>
+    <div class="box" id="acces">
+      <h3>Accès</h3>
+      <p class="addr">10 rue Pierre Demours<br>75017 Paris</p>
+      <p>À deux minutes de l'avenue des Ternes. Métro Ternes (ligne 2) ou Pereire (RER C, ligne 3).</p>
+      <div class="ctas">
+        <a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=10+Rue+Pierre+Demours+75017+Paris" target="_blank" rel="noopener">Itinéraire</a>
+        <a class="btn ghost" href="tel:+33767755401">07 67 75 54 01</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="s alt faq" id="questions">
+  <div class="wrap">
+    <div class="sh"><div class="eyebrow">Questions</div><h2 class="t">Avant de passer</h2></div>
+    <details><summary>Faut-il prendre rendez-vous ?</summary><p>Non, passez directement en boutique aux heures d'ouverture.</p></details>
+    <details><summary>Combien coûte une réparation ?</summary><p>Cela dépend de la chaussure et du travail. Le prix vous est annoncé au comptoir avant toute intervention.</p></details>
+    <details><summary>Pouvez-vous copier mon badge d'immeuble ?</summary><p>Apportez votre badge : on vérifie en boutique s'il peut être reproduit.</p></details>
+    <details><summary>Et pour une clé de voiture ou une télécommande ?</summary><p>Apportez votre clé : on vous dit sur place ce qui est possible et à quel prix.</p></details>
+  </div>
+</section>
+
+<section class="s">
+  <div class="wrap">
+    <div class="cta-band">
+      <div><h2>Une question avant de passer ?</h2><p>Appelez la boutique, on vous répond aux heures d'ouverture.</p></div>
+      <a class="btn" href="tel:+33767755401">07 67 75 54 01</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="ft">
+  <div class="wrap">
+    <span>Le Cordouanier · Cordonnerie traditionnelle · 10 rue Pierre Demours, 75017 Paris</span>
+    <span>Proposition de site non officielle · réalisée par Jean Cazals</span>
+  </div>
+</footer>
+
+<div class="callbar"><a class="btn" href="tel:+33767755401">Appeler</a><a class="btn ghost" href="https://www.google.com/maps/dir/?api=1&destination=10+Rue+Pierre+Demours+75017+Paris" target="_blank" rel="noopener">Itinéraire</a></div>
+
+<script>
+/* Open/closed status, computed in Paris time. Times in minutes since midnight. */
+(function(){
+  var H={2:[[570,810],[930,1130]],3:[[570,810],[930,1130]],4:[[570,810],[930,1130]],5:[[570,810],[930,1130]],6:[[570,1130]]};
+  var parts=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Paris',weekday:'short',hour:'2-digit',minute:'2-digit',hour12:false}).formatToParts(new Date());
+  var get=function(t){return (parts.find(function(p){return p.type===t;})||{}).value;};
+  var day=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(get('weekday'));
+  var now=(+get('hour')%24)*60+(+get('minute'));
+  var fmt=function(m){return Math.floor(m/60)+' h '+String(m%60).padStart(2,'0');};
+  var row=document.querySelector('#hours tr[data-d="'+day+'"]');if(row)row.className='today';
+  var slots=H[day]||[],el=document.getElementById('status'),t=document.getElementById('status-t');
+  for(var i=0;i<slots.length;i++){
+    if(now>=slots[i][0]&&now<slots[i][1]){el.className='status open';t.textContent='Ouvert maintenant · jusqu’à '+fmt(slots[i][1]);return;}
+    if(now<slots[i][0]){t.textContent='Fermé · ouvre à '+fmt(slots[i][0]);return;}
+  }
+  t.textContent='Fermé pour aujourd’hui';
+})();
+</script>
+</body>
+</html>
