@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>BD Pressing — Pressing et teinturerie, Paris 17e (proposition de site)</title>
+<meta name="description" content="Pressing et teinturerie, 53 boulevard Gouvion-Saint-Cyr, Paris 17e. Nettoyage à sec, chemises, linge de maison, retouches.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%232a2d32'/%3E%3Cpath d='M16 9.5a2 2 0 1 1 2 2c-1 0-2 .7-2 1.6L6 20h20l-10-6.9' fill='none' stroke='%23fff' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#f4f4f1;--bg-2:#e8e9e5;--ink:#1d2024;--muted:#5d6268;--line:#d6d8d3;
+  --char:#2a2d32;--char-2:#1f2226;--blue:#2c5a9a;--blue-2:#234a80;--sky:#9dbbe3;
+  --on-dark:#f4f4f1;--on-dark-muted:#b7bcc3;
+  --head:'Familjen Grotesk',system-ui,sans-serif;--sans:'Atkinson Hyperlegible',system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16.5px/1.7 var(--sans);-webkit-font-smoothing:antialiased}
+img{display:block;width:100%;height:100%;object-fit:cover}
+a{color:inherit}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+.note{border-bottom:1px solid var(--line);color:var(--muted);font-size:12.5px;text-align:center;padding:8px 16px}
+.note a{color:var(--ink)}
+
+/* Header: the charcoal fascia of the shop */
+.hd{background:var(--char);color:var(--on-dark)}
+.hd .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;height:88px}
+.mark{display:flex;align-items:center;gap:14px;text-decoration:none;line-height:1}
+.hanger{width:38px;height:26px;flex:none;color:var(--on-dark)}
+.mark b{display:block;font:500 21px/1 var(--head);letter-spacing:.16em;text-transform:uppercase}
+.mark b span{font-weight:400;letter-spacing:.02em;text-transform:none;font-size:23px;margin-left:6px}
+.mark small{display:block;margin-top:7px;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--on-dark-muted)}
+.hd nav{display:flex;align-items:center;gap:34px;font-size:14.5px}
+.hd nav a{text-decoration:none;color:var(--on-dark-muted)}
+.hd nav a:hover{color:var(--on-dark)}
+.hd nav .tel{color:var(--on-dark);font-weight:700;font-variant-numeric:tabular-nums}
+
+/* Hero */
+.hero{display:grid;grid-template-columns:5fr 6fr;gap:72px;align-items:center;padding-top:80px;padding-bottom:120px}
+.label{font:600 12px/1 var(--head);letter-spacing:.2em;text-transform:uppercase;color:var(--blue)}
+h1{font:500 clamp(42px,5vw,70px)/1.02 var(--head);letter-spacing:-.03em;margin:24px 0 28px}
+.lede{max-width:28em;color:var(--muted);margin:0 0 40px}
+.actions{display:flex;flex-wrap:wrap;align-items:center;gap:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 30px;border-radius:6px;background:var(--blue);color:#fff;text-decoration:none;font:600 15.5px/1 var(--head);letter-spacing:.01em;transition:background .2s}
+.btn:hover{background:var(--blue-2)}
+.link{font:600 15.5px/1 var(--head);text-decoration:none;border-bottom:1.5px solid var(--ink);padding-bottom:4px}
+.link:hover{color:var(--blue);border-color:var(--blue)}
+.today{margin-top:48px;padding-top:20px;border-top:1px solid var(--line);font-size:14.5px;color:var(--muted)}
+.today strong{color:var(--ink)}
+.hero-pic{aspect-ratio:5/6;overflow:hidden;border-radius:6px;background:var(--bg-2)}
+
+/* Services */
+.services{background:#fff;padding:110px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.intro{display:grid;grid-template-columns:5fr 6fr;gap:72px;margin-bottom:56px;align-items:end}
+h2{font:500 clamp(32px,3.6vw,48px)/1.08 var(--head);letter-spacing:-.025em;margin:20px 0 0}
+.intro p{color:var(--muted);margin:0;max-width:32em}
+.strip{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-bottom:40px}
+.strip div{height:250px;overflow:hidden;border-radius:6px;background:var(--bg)}
+.svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.svc{background:var(--bg);border-radius:6px;padding:26px 24px 28px;transition:background .2s}
+.svc:hover{background:var(--bg-2)}
+.svc::before{content:"";display:block;width:24px;height:3px;background:var(--blue);margin-bottom:18px}
+.svc h3{font:600 19px/1.25 var(--head);letter-spacing:-.01em;margin:0 0 8px}
+.svc p{margin:0;font-size:14.5px;line-height:1.55;color:var(--muted)}
+
+/* Band */
+.band{position:relative;height:min(64vh,520px);overflow:hidden;background:var(--char)}
+.band img{filter:brightness(.82)}
+.band::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(31,34,38,.82) 0%,rgba(31,34,38,.2) 70%)}
+.band figcaption{position:absolute;inset:0;z-index:1;display:flex;align-items:center}
+.band p{margin:0;max-width:17ch;font:500 clamp(30px,3.6vw,48px)/1.12 var(--head);letter-spacing:-.025em;color:var(--on-dark)}
+
+/* Visit */
+.visit{padding:110px 0;background:var(--char-2);color:var(--on-dark);--line:rgba(244,244,241,.15);--muted:var(--on-dark-muted);--ink:var(--on-dark)}
+.visit .label{color:var(--sky)}
+.visit .btn{background:var(--on-dark);color:var(--char-2)}
+.visit .btn:hover{background:#fff}
+.visit .link:hover{color:var(--sky);border-color:var(--sky)}
+.visit .grid{display:grid;grid-template-columns:5fr 6fr;gap:72px}
+.hours{width:100%;border-collapse:collapse;margin-top:8px}
+.hours td{padding:15px 0;border-bottom:1px solid var(--line);font-size:15.5px}
+.hours tr:first-child td{border-top:1px solid var(--ink)}
+.hours td:last-child{text-align:right;color:var(--muted);font-variant-numeric:tabular-nums}
+.hours tr.is-today td{color:var(--sky);font-weight:700}
+.hours tr.closed td:last-child{color:#7c8189}
+.place .addr{font:500 32px/1.2 var(--head);letter-spacing:-.02em;margin:22px 0 14px}
+.place .sub{color:var(--muted);margin:0 0 36px}
+.facts{border-top:1px solid var(--ink);margin-bottom:40px}
+.facts div{display:flex;justify-content:space-between;gap:20px;padding:15px 0;border-bottom:1px solid var(--line);font-size:15.5px}
+.facts span{color:var(--muted)}
+.facts a{text-decoration:none;font-weight:700}
+
+.ft{background:#16181b;color:#9196a0;padding:40px 0 48px;font-size:13px}
+.ft .mark b{color:var(--on-dark);font-size:16px}
+.ft .mark b span{font-size:18px}
+.ft .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center}
+.callbar{display:none}
+
+@media (max-width:900px){
+  .hd .wrap{height:76px}
+  .hd nav{display:none}
+  .hanger{width:30px;height:21px}
+  .mark b{font-size:15px;letter-spacing:.12em;white-space:nowrap}
+  .mark b span{font-size:17px;margin-left:4px}
+  .mark small{letter-spacing:.18em}
+  .hero,.intro,.visit .grid{grid-template-columns:1fr;gap:40px}
+  .hero{padding-top:32px;padding-bottom:88px}
+  .hero figure{order:-1}
+  .hero-pic{aspect-ratio:4/3}
+  .services,.visit{padding:80px 0}
+  .strip{grid-template-columns:1fr 1fr;gap:8px;margin-bottom:28px}
+  .strip div{height:150px}
+  .strip div:first-child{grid-column:1/-1;height:200px}
+  .svc-grid{grid-template-columns:1fr 1fr;gap:10px}
+  .svc{padding:20px 16px 22px}
+  .svc::before{margin-bottom:14px}
+  .svc h3{font-size:17px}
+  .svc p{font-size:13.5px}
+  .band{height:420px}
+  .ft{padding-bottom:110px}
+  .callbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:10;background:var(--bg);border-top:1px solid var(--line);padding:10px 12px calc(10px + env(safe-area-inset-bottom));gap:10px}
+  .callbar a{display:flex;align-items:center;justify-content:center;min-height:48px;border-radius:6px;font:600 15px/1 var(--head);text-decoration:none;border:1px solid var(--ink)}
+  .callbar a:first-child{background:var(--blue);border-color:var(--blue);color:#fff}
+}
+</style>
+</head>
+<body>
+<div class="note">Proposition de site non officielle, préparée pour BD Pressing par Jean Cazals. Informations à vérifier avec la boutique. <a href="https://client-contact.fr/">En savoir plus</a></div>
+
+<header class="hd">
+  <div class="wrap">
+    <a class="mark" href="#top" aria-label="BD Pressing, accueil">
+      <svg class="hanger" viewBox="0 0 38 26" aria-hidden="true"><path d="M17 5.5a2.5 2.5 0 1 1 2.5 2.5c-1.2 0-2.5.9-2.5 2.1L2.5 21.5h33L19 10.1" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span><b>BD<span>Pressing</span></b><small>Pressing et teinturerie · Paris 17<sup>e</sup></small></span>
+    </a>
+    <nav aria-label="Navigation"><a href="#services">Services</a><a href="#visite">Horaires et accès</a><a class="tel" href="tel:+33171509779">01 71 50 97 79</a></nav>
+  </div>
+</header>
+
+<main id="top">
+<section class="wrap hero">
+  <div>
+    <div class="label">53 boulevard Gouvion-Saint-Cyr</div>
+    <h1>Vos vêtements, impeccables, au coin de la rue.</h1>
+    <p class="lede">Nettoyage à sec, chemises, linge de maison et retouches. Le pressing du boulevard Gouvion-Saint-Cyr, ouvert six jours sur sept, tôt le matin et jusqu’en soirée.</p>
+    <div class="actions">
+      <a class="btn" href="tel:+33171509779">Appeler le pressing</a>
+      <a class="link" href="https://www.google.com/maps/dir/?api=1&destination=53+Boulevard+Gouvion-Saint-Cyr+75017+Paris" target="_blank" rel="noopener">Itinéraire</a>
+    </div>
+    <p class="today" id="today">Ouvert du lundi au samedi.</p>
+  </div>
+  <figure style="margin:0">
+    <div class="hero-pic"><img src="https://images.unsplash.com/photo-1763495195143-f3d6650630f9?w=1300&q=80&auto=format&fit=crop" alt="Employée au comptoir d’un pressing, vêtements sous housse"></div>
+  </figure>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="intro">
+      <div><div class="label">Services</div><h2>Du costume à la couette.</h2></div>
+      <p>Déposez vos vêtements au comptoir : on vous indique le prix et la date de retrait au moment du dépôt.</p>
+    </div>
+    <div class="strip">
+      <div><img src="https://images.unsplash.com/photo-1696546761220-6c418dfefb8d?w=900&q=78&auto=format&fit=crop" alt="Repassage d’une chemise au fer professionnel" loading="lazy"></div>
+      <div><img src="https://images.unsplash.com/photo-1603252110481-7ba873bf42ab?w=700&q=78&auto=format&fit=crop" alt="Chemises repassées sur des cintres en bois" loading="lazy"></div>
+      <div><img src="https://images.unsplash.com/photo-1602810316693-3667c854239a?w=700&q=78&auto=format&fit=crop" alt="Chemises pliées sur une table" loading="lazy"></div>
+    </div>
+    <div class="svc-grid">
+      <article class="svc"><h3>Nettoyage à sec</h3><p>Manteaux, vestes, pulls et pièces délicates.</p></article>
+      <article class="svc"><h3>Chemises</h3><p>Lavées, repassées et rendues sur cintre.</p></article>
+      <article class="svc"><h3>Costumes et tailleurs</h3><p>Nettoyés et repassés, prêts pour la semaine.</p></article>
+      <article class="svc"><h3>Robes et tenues de soirée</h3><p>Soie, dentelle et tissus fragiles traités avec soin.</p></article>
+      <article class="svc"><h3>Linge de maison</h3><p>Draps, nappes et serviettes lavés et repassés.</p></article>
+      <article class="svc"><h3>Couettes et rideaux</h3><p>Les grandes pièces qui ne passent pas en machine.</p></article>
+      <article class="svc"><h3>Cuir et daim</h3><p>Vestes, manteaux et sacs en cuir ou en daim.</p></article>
+      <article class="svc"><h3>Retouches</h3><p>Ourlets, ajustements et petites réparations.</p></article>
+    </div>
+  </div>
+</section>
+
+<figure class="band" style="margin:0">
+  <img src="https://images.unsplash.com/photo-1542058186993-286fdce0b580?w=2000&q=78&auto=format&fit=crop" alt="Rangée de chemises blanches suspendues" loading="lazy">
+  <figcaption><div class="wrap"><p>Ouvert dès 8 h 30 et jusqu’à 19 h 30, avant ou après le travail.</p></div></figcaption>
+</figure>
+
+<section class="visit" id="visite">
+  <div class="wrap grid">
+    <div class="place">
+      <div class="label">Nous trouver</div>
+      <p class="addr">53 boulevard<br>Gouvion&#8209;Saint&#8209;Cyr, 75017 Paris</p>
+      <p class="sub">Près de la porte Maillot. Sans rendez-vous.</p>
+      <div class="facts">
+        <div><span>Métro</span>Porte Maillot, ligne 1</div>
+        <div><span>Téléphone</span><a href="tel:+33171509779">01 71 50 97 79</a></div>
+        <div><span>Dimanche</span>Fermé</div>
+      </div>
+      <div class="actions">
+        <a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=53+Boulevard+Gouvion-Saint-Cyr+75017+Paris" target="_blank" rel="noopener">Itinéraire</a>
+        <a class="link" href="tel:+33171509779">Appeler</a>
+      </div>
+    </div>
+    <div>
+      <div class="label" style="margin-bottom:22px">Horaires</div>
+      <table class="hours" id="hours">
+        <tr data-d="1"><td>Lundi</td><td>8 h 30 – 19 h 30</td></tr>
+        <tr data-d="2"><td>Mardi</td><td>8 h 30 – 19 h 30</td></tr>
+        <tr data-d="3"><td>Mercredi</td><td>8 h 30 – 19 h 30</td></tr>
+        <tr data-d="4"><td>Jeudi</td><td>8 h 30 – 19 h 30</td></tr>
+        <tr data-d="5"><td>Vendredi</td><td>8 h 30 – 19 h 30</td></tr>
+        <tr data-d="6"><td>Samedi</td><td>9 h – 19 h 30</td></tr>
+        <tr data-d="0" class="closed"><td>Dimanche</td><td>Fermé</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="ft">
+  <div class="wrap">
+    <a class="mark" href="#top"><b>BD<span>Pressing</span></b></a>
+    <span style="color:#c9cdd3">53 bd Gouvion-Saint-Cyr · 75017 Paris · 01 71 50 97 79</span>
+    <span>Proposition non officielle réalisée par Jean Cazals · Photographies Unsplash</span>
+  </div>
+</footer>
+
+<div class="callbar"><a href="tel:+33171509779">Appeler</a><a href="https://www.google.com/maps/dir/?api=1&destination=53+Boulevard+Gouvion-Saint-Cyr+75017+Paris" target="_blank" rel="noopener">Itinéraire</a></div>
+
+<script>
+/* Today's opening, in Paris time, written as a plain sentence. Times in minutes since midnight. */
+(function(){
+  var w=[[510,1170]],H={1:w,2:w,3:w,4:w,5:w,6:[[540,1170]]};
+  var days=['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
+  var parts=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Paris',weekday:'short',hour:'2-digit',minute:'2-digit',hour12:false}).formatToParts(new Date());
+  var get=function(t){return (parts.find(function(p){return p.type===t;})||{}).value;};
+  var day=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(get('weekday'));
+  var now=(+get('hour')%24)*60+(+get('minute'));
+  var fmt=function(m){return Math.floor(m/60)+' h'+(m%60?' '+String(m%60).padStart(2,'0'):'');};
+  var row=document.querySelector('#hours tr[data-d="'+day+'"]');if(row)row.classList.add('is-today');
+  var el=document.getElementById('today'),slots=H[day]||[];
+  for(var i=0;i<slots.length;i++){
+    if(now>=slots[i][0]&&now<slots[i][1]){el.innerHTML='<strong>Ouvert</strong> aujourd’hui jusqu’à '+fmt(slots[i][1])+'.';return;}
+    if(now<slots[i][0]){el.innerHTML='<strong>Fermé</strong> pour le moment · ouvre à '+fmt(slots[i][0])+'.';return;}
+  }
+  for(var k=1;k<=7;k++){var n=(day+k)%7;if(H[n]){el.innerHTML='<strong>Fermé</strong> · réouverture '+days[n]+' à '+fmt(H[n][0][0])+'.';break;}}
+})();
+</script>
+</body>
+</html>
