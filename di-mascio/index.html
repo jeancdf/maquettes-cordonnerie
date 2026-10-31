@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Di Mascio — Patine et soin du cuir, Paris 17e (proposition de site)</title>
+<meta name="description" content="Laurent Di Mascio, 20 rue Saint-Ferdinand, Paris 17e. Entretien des chaussures à la main, patines sur mesure et vente de souliers en cuir.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Golos+Text:wght@400;500;600&display=swap">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23101d38'/%3E%3Crect x='6' y='22' width='20' height='3' fill='%23e8702f'/%3E%3Ctext x='16' y='19' text-anchor='middle' font-family='Georgia' font-size='15' fill='%23f4efe7'%3EDM%3C/text%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#f4efe7;--bg-2:#e8e0d3;--ink:#121a2c;--muted:#5d6475;--line:#d6cdbd;
+  --navy:#101d38;--navy-2:#18294d;--navy-3:#0a1328;--orange:#e8702f;--orange-2:#f0874d;
+  --on-dark:#f4efe7;--on-dark-muted:#a9b2c6;
+  --serif:'Gloock',Georgia,serif;--sans:'Golos Text',system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16.5px/1.7 var(--sans);-webkit-font-smoothing:antialiased}
+img{display:block;width:100%;height:100%;object-fit:cover}
+a{color:inherit}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+.note{background:var(--navy-3);color:var(--on-dark-muted);font-size:12.5px;text-align:center;padding:8px 16px}
+.note a{color:var(--on-dark)}
+
+/* Header: navy band closed by a fluorescent rule, like the shop front */
+.hd{background:var(--navy);color:var(--on-dark);border-bottom:4px solid var(--orange)}
+.hd .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;height:84px}
+.mark{display:flex;align-items:baseline;gap:14px;text-decoration:none;line-height:1}
+.mark b{font:400 30px/1 var(--serif);letter-spacing:.01em}
+.mark small{font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--on-dark-muted)}
+.hd nav{display:flex;align-items:center;gap:32px;font-size:14px}
+.hd nav a{text-decoration:none;color:var(--on-dark-muted)}
+.hd nav a:hover{color:var(--on-dark)}
+
+/* Hero: dark, the shoe on black */
+.hero{background:var(--navy);color:var(--on-dark)}
+.hero .wrap{display:grid;grid-template-columns:6fr 5fr;gap:64px;align-items:center;padding-top:84px;padding-bottom:96px}
+.label{font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;font-weight:600;color:var(--orange)}
+h1{font:400 clamp(44px,5.6vw,78px)/1.02 var(--serif);letter-spacing:-.015em;margin:24px 0 28px}
+h1 em{font-style:normal;color:var(--orange)}
+.lede{max-width:30em;color:var(--on-dark-muted);margin:0 0 40px}
+.actions{display:flex;flex-wrap:wrap;align-items:center;gap:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 30px;background:var(--orange);color:var(--navy-3);text-decoration:none;font-size:15px;font-weight:600;letter-spacing:.02em;transition:background .2s}
+.btn:hover{background:var(--orange-2)}
+.link{font-size:15px;font-weight:500;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:3px}
+.link:hover{color:var(--orange)}
+.today{font-size:14.5px;color:var(--on-dark-muted);margin:36px 0 0;padding-top:20px;border-top:1px solid rgba(244,239,231,.14)}
+.today strong{color:var(--on-dark);font-weight:600}
+.hero-pic{position:relative;aspect-ratio:4/5;background:var(--navy-3)}
+.hero-pic::before{content:"";position:absolute;left:-14px;bottom:-14px;width:46%;height:46%;background:var(--orange);z-index:0}
+.hero-pic img{position:relative;z-index:1}
+
+/* Patine: the centrepiece */
+.patine{padding:112px 0}
+.patine .grid{display:grid;grid-template-columns:5fr 6fr;gap:72px;align-items:center}
+h2{font:400 clamp(34px,3.8vw,52px)/1.08 var(--serif);letter-spacing:-.01em;margin:20px 0 22px}
+.patine .label,.soin .label{color:#c94a06}
+.patine p.intro{color:var(--muted);margin:0 0 36px;max-width:32em}
+.steps{list-style:none;margin:0;padding:0;border-top:1px solid var(--ink)}
+.steps li{display:grid;grid-template-columns:56px 1fr;gap:4px 8px;padding:20px 0;border-bottom:1px solid var(--line)}
+.steps b{grid-row:span 2;font:400 26px/1.1 var(--serif);color:#c94a06}
+.steps h3{margin:0;font:600 17px/1.4 var(--sans)}
+.steps p{margin:0;color:var(--muted);font-size:15px;line-height:1.55}
+.duo{display:grid;grid-template-columns:3fr 2fr;gap:14px;height:560px}
+.duo>div{overflow:hidden;background:var(--bg-2)}
+.duo>div:last-child{display:grid;grid-template-rows:1fr 1fr;gap:14px;background:none;min-height:0}
+.duo>div:last-child>div{position:relative;overflow:hidden;min-height:0}
+.duo>div:last-child img{position:absolute;inset:0}
+
+/* Soin: grid of hand-care services */
+.soin{background:var(--bg-2);padding:108px 0}
+.soin .head{display:grid;grid-template-columns:5fr 6fr;gap:72px;align-items:end;margin-bottom:52px}
+.soin .head h2{margin-bottom:0}
+.soin .head p{color:var(--muted);margin:0;max-width:32em}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.card{background:var(--bg);padding:28px 28px 30px;border-left:3px solid var(--navy);transition:border-color .2s}
+.card:hover{border-left-color:var(--orange)}
+.card h3{margin:0 0 8px;font:400 23px/1.2 var(--serif)}
+.card p{margin:0;font-size:14.5px;line-height:1.55;color:var(--muted)}
+.soin-note{margin:26px 0 0;font-size:14.5px;color:var(--muted)}
+
+/* Vente */
+.vente{background:var(--navy-2);color:var(--on-dark)}
+.vente .wrap{display:grid;grid-template-columns:1fr 1fr;gap:0;padding:0 24px}
+.vente-pic{position:relative;min-height:540px;background:var(--navy-3)}
+.vente-pic img{position:absolute;inset:0}
+.vente-txt{padding:88px 0 88px 72px;align-self:center}
+.vente-txt p{color:var(--on-dark-muted);margin:0 0 30px;max-width:30em}
+.vente ul{list-style:none;margin:0 0 36px;padding:0;border-top:1px solid rgba(244,239,231,.18)}
+.vente li{padding:14px 0;border-bottom:1px solid rgba(244,239,231,.18);font-size:15.5px}
+.vente li::before{content:"";display:inline-block;width:14px;height:3px;background:var(--orange);vertical-align:middle;margin-right:14px}
+
+/* Visit */
+.visit{padding:108px 0}
+.visit .grid{display:grid;grid-template-columns:5fr 6fr;gap:72px}
+.visit .label{color:#c94a06}
+.visit .btn{background:var(--navy);color:var(--on-dark)}
+.visit .btn:hover{background:var(--navy-2)}
+.hours{width:100%;border-collapse:collapse;margin-top:8px}
+.hours td{padding:15px 0;border-bottom:1px solid var(--line);font-size:15.5px}
+.hours tr:first-child td{border-top:1px solid var(--ink)}
+.hours td:last-child{text-align:right;color:var(--muted);font-variant-numeric:tabular-nums}
+.hours tr.is-today td{color:var(--ink);font-weight:600}
+.hours tr.is-today td:first-child{box-shadow:inset 3px 0 0 var(--orange);padding-left:14px}
+.hours tr.closed td:last-child{color:#9a9fab}
+.addr{font:400 36px/1.15 var(--serif);margin:22px 0 14px}
+.sub{color:var(--muted);margin:0 0 36px}
+.facts{border-top:1px solid var(--ink);margin-bottom:40px}
+.facts div{display:flex;justify-content:space-between;gap:20px;padding:15px 0;border-bottom:1px solid var(--line);font-size:15.5px}
+.facts span,.facts em{color:var(--muted);font-style:normal}
+
+.ft{background:var(--navy-3);color:#8d97ad;padding:40px 0 48px;font-size:13px;border-top:4px solid var(--orange)}
+.ft .mark b{color:var(--on-dark);font-size:22px}
+.ft .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center}
+.callbar{display:none}
+
+@media (max-width:900px){
+  .hd .wrap{height:72px}
+  .hd nav{display:none}
+  .mark b{font-size:25px;white-space:nowrap}
+  .mark small{letter-spacing:.18em}
+  .hero .wrap,.patine .grid,.soin .head,.visit .grid,.vente .wrap{grid-template-columns:1fr;gap:40px}
+  .hero .wrap{padding-top:36px;padding-bottom:72px}
+  .hero figure{order:-1;padding-left:14px}
+  .hero-pic{aspect-ratio:1}
+  .patine,.soin,.visit{padding:76px 0}
+  .duo{height:380px;gap:8px}
+  .duo>div:last-child{gap:8px}
+  .cards{grid-template-columns:1fr;gap:10px}
+  .card{padding:22px 22px 24px}
+  .vente .wrap{padding:0;gap:0}
+  .vente-pic{min-height:300px}
+  .vente-txt{padding:56px 24px 64px}
+  .addr{font-size:30px}
+  .ft{padding-bottom:110px}
+  .callbar{display:block;position:fixed;left:0;right:0;bottom:0;z-index:10;background:var(--navy);border-top:3px solid var(--orange);padding:10px 12px calc(10px + env(safe-area-inset-bottom))}
+  .callbar a{display:flex;align-items:center;justify-content:center;min-height:48px;font-size:15px;font-weight:600;text-decoration:none;background:var(--orange);color:var(--navy-3)}
+}
+</style>
+</head>
+<body>
+<div class="note">Proposition de site non officielle, préparée pour Laurent Di Mascio par Jean Cazals. Informations à vérifier avec la boutique. <a href="https://client-contact.fr/">En savoir plus</a></div>
+
+<header class="hd">
+  <div class="wrap">
+    <a class="mark" href="#top"><b>Di Mascio</b><small>Paris 17<sup>e</sup></small></a>
+    <nav aria-label="Navigation"><a href="#patine">Patine</a><a href="#soin">Entretien</a><a href="#vente">Souliers</a><a href="#visite">Horaires et accès</a></nav>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <div class="label">20 rue Saint-Ferdinand</div>
+      <h1>Le cuir, travaillé <em>à la main.</em></h1>
+      <p class="lede">Entretien des chaussures à la main, patines sur mesure et souliers en cuir à la vente. Laurent Di Mascio prend le temps de chaque paire, dans sa boutique à deux pas de la porte Maillot.</p>
+      <div class="actions">
+        <a class="btn" href="#patine">Faire patiner une paire</a>
+        <a class="link" href="#visite">Horaires et accès</a>
+      </div>
+      <p class="today" id="today">Ouvert du mardi au samedi.</p>
+    </div>
+    <figure style="margin:0">
+      <div class="hero-pic"><img src="https://images.unsplash.com/photo-1664505504065-31f8937d2261?w=1200&q=80&auto=format&fit=crop" alt="Derby en cuir cognac à la patine unie, lustrée à la main"></div>
+    </figure>
+  </div>
+</section>
+
+<section class="patine" id="patine">
+  <div class="wrap grid">
+    <div>
+      <div class="label">La patine sur mesure</div>
+      <h2>Une couleur qui n’existe que sur vos chaussures.</h2>
+      <p class="intro">La patine se monte à la main, couche après couche, jusqu’à la nuance voulue. Raviver un cuir fatigué, foncer une pointe, changer complètement de teinte : tout se décide avec vous, au comptoir.</p>
+      <ol class="steps">
+        <li><b>1</b><h3>On choisit ensemble</h3><p>La teinte, l’intensité, les dégradés. Vous apportez une idée, une photo, ou rien du tout.</p></li>
+        <li><b>2</b><h3>Le cuir est préparé</h3><p>Nettoyé et dégraissé pour que la couleur prenne en profondeur.</p></li>
+        <li><b>3</b><h3>Couche après couche</h3><p>Teinture posée à la main, au pinceau et au chiffon, puis nourrie.</p></li>
+        <li><b>4</b><h3>La finition</h3><p>Cirage et glaçage, mat ou miroir, selon votre goût.</p></li>
+      </ol>
+    </div>
+    <div class="duo">
+      <div><img src="https://images.unsplash.com/photo-1616696038562-574c18066055?w=1000&q=78&auto=format&fit=crop" alt="Paire de derbies en cuir orangé" loading="lazy"></div>
+      <div>
+        <div><img src="https://images.unsplash.com/photo-1563433337461-5b65f0834f3a?w=700&q=78&auto=format&fit=crop" alt="Gros plan sur le grain d’un cuir brun" loading="lazy"></div>
+        <div><img src="https://images.unsplash.com/photo-1641893843833-a006778dc00b?w=700&q=78&auto=format&fit=crop" alt="Richelieus en cuir prune" loading="lazy"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="soin" id="soin">
+  <div class="wrap">
+    <div class="head">
+      <div><div class="label">L’entretien à la main</div><h2>Le soin que vos chaussures méritent.</h2></div>
+      <p>Pas de machine : chaque paire est brossée, nourrie et cirée à la main. Le prix est annoncé avant de commencer.</p>
+    </div>
+    <div class="cards">
+      <article class="card"><h3>Soin complet</h3><p>Nettoyage, crème nourrissante, cirage : la paire repart comme au premier jour.</p></article>
+      <article class="card"><h3>Glaçage</h3><p>Le brillant miroir sur la pointe et le talon, monté à la cire et à l’eau.</p></article>
+      <article class="card"><h3>Remise en couleur</h3><p>Rayures, éraflures, cuir délavé : la teinte est reprise à la main.</p></article>
+      <article class="card"><h3>Daim et nubuck</h3><p>Nettoyage en douceur et redressage du velours.</p></article>
+      <article class="card"><h3>Imperméabilisation</h3><p>Une protection avant l’hiver parisien, sans changer l’aspect du cuir.</p></article>
+      <article class="card"><h3>Bottes et sacs</h3><p>Le même soin pour les grandes pièces de cuir.</p></article>
+    </div>
+    <p class="soin-note">Sans rendez-vous, aux heures d’ouverture.</p>
+  </div>
+</section>
+
+<section class="vente" id="vente">
+  <div class="wrap">
+    <div class="vente-pic"><img src="https://images.unsplash.com/photo-1777987601431-8d27d2039cc4?w=1200&q=78&auto=format&fit=crop" alt="Richelieus en cuir brun sur une surface en bois" loading="lazy"></div>
+    <div class="vente-txt">
+      <div class="label">Nouveau en boutique</div>
+      <h2>Des souliers en cuir, à la vente.</h2>
+      <p>Une sélection de chaussures en cuir, choisies pour durer. Et parce qu’elles sortent de chez un spécialiste de la patine, elles peuvent être personnalisées dès l’achat.</p>
+      <ul>
+        <li>Souliers de ville en cuir</li>
+        <li>Conseil sur la taille et l’entretien</li>
+        <li>Patine personnalisée à l’achat</li>
+      </ul>
+      <a class="btn" href="#visite">Venir les essayer</a>
+    </div>
+  </div>
+</section>
+
+<section class="visit" id="visite">
+  <div class="wrap grid">
+    <div>
+      <div class="label">Nous trouver</div>
+      <p class="addr">20 rue Saint&#8209;Ferdinand<br>75017 Paris</p>
+      <p class="sub">Entre l’avenue des Ternes et l’avenue de la Grande-Armée.</p>
+      <div class="facts">
+        <div><span>Métro</span>Argentine, ligne 1</div>
+        <div><span>Téléphone</span><em>[à compléter]</em></div>
+        <div><span>Rendez-vous</span>Inutile</div>
+      </div>
+      <div class="actions">
+        <a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=20+Rue+Saint-Ferdinand+75017+Paris" target="_blank" rel="noopener">Itinéraire</a>
+      </div>
+    </div>
+    <div>
+      <div class="label" style="margin-bottom:22px">Horaires</div>
+      <table class="hours" id="hours">
+        <tr data-d="2"><td>Mardi</td><td>11 h 30 – 14 h · 15 h – 20 h</td></tr>
+        <tr data-d="3"><td>Mercredi</td><td>11 h 30 – 14 h · 15 h – 20 h</td></tr>
+        <tr data-d="4"><td>Jeudi</td><td>11 h 30 – 14 h · 15 h – 20 h</td></tr>
+        <tr data-d="5"><td>Vendredi</td><td>11 h 30 – 14 h · 15 h – 20 h</td></tr>
+        <tr data-d="6"><td>Samedi</td><td>11 h 30 – 14 h · 15 h – 20 h</td></tr>
+        <tr data-d="0" class="closed"><td>Dimanche</td><td>Fermé</td></tr>
+        <tr data-d="1" class="closed"><td>Lundi</td><td>Fermé</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="ft">
+  <div class="wrap">
+    <a class="mark" href="#top"><b>Di Mascio</b></a>
+    <span style="color:#c3cadb">20 rue Saint-Ferdinand · 75017 Paris</span>
+    <span>Proposition non officielle réalisée par Jean Cazals · Photographies Unsplash</span>
+  </div>
+</footer>
+
+<div class="callbar"><a href="https://www.google.com/maps/dir/?api=1&destination=20+Rue+Saint-Ferdinand+75017+Paris" target="_blank" rel="noopener">Venir à la boutique</a></div>
+
+<script>
+/* Today's opening, in Paris time, written as a plain sentence. Times in minutes since midnight. */
+(function(){
+  var d=[[690,840],[900,1200]],H={2:d,3:d,4:d,5:d,6:d};
+  var days=['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
+  var parts=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Paris',weekday:'short',hour:'2-digit',minute:'2-digit',hour12:false}).formatToParts(new Date());
+  var get=function(t){return (parts.find(function(p){return p.type===t;})||{}).value;};
+  var day=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(get('weekday'));
+  var now=(+get('hour')%24)*60+(+get('minute'));
+  var fmt=function(m){return Math.floor(m/60)+' h'+(m%60?' '+String(m%60).padStart(2,'0'):'');};
+  var row=document.querySelector('#hours tr[data-d="'+day+'"]');if(row)row.classList.add('is-today');
+  var el=document.getElementById('today'),slots=H[day]||[];
+  for(var i=0;i<slots.length;i++){
+    if(now>=slots[i][0]&&now<slots[i][1]){el.innerHTML='<strong>Ouvert</strong> en ce moment, jusqu’à '+fmt(slots[i][1])+'.';return;}
+    if(now<slots[i][0]){el.innerHTML='<strong>Fermé</strong> pour le moment · ouvre à '+fmt(slots[i][0])+'.';return;}
+  }
+  for(var k=1;k<=7;k++){var n=(day+k)%7;if(H[n]){el.innerHTML='<strong>Fermé</strong> · réouverture '+days[n]+' à '+fmt(H[n][0][0])+'.';break;}}
+})();
+</script>
+</body>
+</html>
