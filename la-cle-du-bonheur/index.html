@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>La Clé du Bonheur — Serrurerie, clés et cordonnerie, Paris 17e (proposition de site)</title>
+<meta name="description" content="Serrurerie, ouverture de porte, reproduction de clés, cordonnerie et gravure. 13 rue Pierre Demours, Paris 17e.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Albert+Sans:wght@400;500;600&display=swap">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%234a2445'/%3E%3Cpath d='M16 7a4 4 0 0 1 2.2 7.35L19.5 24h-7l1.3-9.65A4 4 0 0 1 16 7z' fill='%23c9a45c'/%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#f6f1ea;--bg-2:#ece3d8;--ink:#221a20;--muted:#6c6068;--line:#ddd2c6;
+  --plum:#4a2445;--plum-2:#3a1b36;--plum-dark:#2a1427;--gold:#c9a45c;
+  --on-dark:#f6f1ea;--on-dark-muted:#cdbfca;
+  --serif:'Marcellus',Georgia,serif;--sans:'Albert Sans',system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16.5px/1.7 var(--sans);-webkit-font-smoothing:antialiased}
+img{display:block;width:100%;height:100%;object-fit:cover}
+a{color:inherit}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+.note{background:var(--bg);border-bottom:1px solid var(--line);color:var(--muted);font-size:12.5px;text-align:center;padding:8px 16px}
+.note a{color:var(--ink)}
+
+/* Header: a plum band, like the shop's fascia */
+.hd{background:var(--plum);color:var(--on-dark)}
+.hd .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;height:96px}
+.mark{text-decoration:none;display:flex;align-items:center;gap:14px;line-height:1}
+.plate{width:30px;height:42px;flex:none;color:var(--gold)}
+.mark b{display:block;font:400 22px/1 var(--serif);letter-spacing:.12em;text-transform:uppercase}
+.mark small{display:block;margin-top:8px;font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--on-dark-muted)}
+.hd nav{display:flex;align-items:center;gap:34px;font-size:14px}
+.hd nav a{text-decoration:none;color:var(--on-dark-muted)}
+.hd nav a:hover{color:var(--on-dark)}
+.hd nav .tel{color:var(--on-dark);font-weight:600;font-variant-numeric:tabular-nums}
+
+/* Hero */
+.hero{display:grid;grid-template-columns:5fr 6fr;gap:72px;align-items:end;padding-top:64px;padding-bottom:120px}
+.label{font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--plum);font-weight:600}
+h1{font:400 clamp(44px,5.6vw,78px)/1.02 var(--serif);letter-spacing:-.015em;margin:28px 0 30px}
+.lede{max-width:27em;color:var(--muted);margin:0 0 40px}
+.actions{display:flex;flex-wrap:wrap;align-items:center;gap:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 30px;background:var(--plum);color:#fff;text-decoration:none;font-size:14.5px;font-weight:600;letter-spacing:.04em;transition:background .2s}
+.btn:hover{background:var(--plum-2)}
+.link{font-size:14.5px;font-weight:600;text-decoration:none;border-bottom:1px solid var(--ink);padding-bottom:3px}
+.link:hover{color:var(--plum);border-color:var(--plum)}
+.today{margin-top:48px;padding-top:20px;border-top:1px solid var(--line);font-size:14px;color:var(--muted)}
+.today strong{color:var(--ink);font-weight:600}
+.hero-pic{aspect-ratio:4/5;overflow:hidden;background:var(--bg-2)}
+.hero-pic img{filter:saturate(.9)}
+
+/* Services */
+.services{background:var(--bg-2);padding:110px 0}
+.intro{display:grid;grid-template-columns:5fr 6fr;gap:72px;margin-bottom:72px}
+h2{font:400 clamp(34px,3.8vw,52px)/1.08 var(--serif);letter-spacing:-.01em;margin:22px 0 0}
+.intro p{color:var(--muted);margin:46px 0 0;max-width:32em}
+.strip{display:grid;grid-template-columns:2fr 1fr 1fr;gap:16px;margin-bottom:48px}
+.strip div{height:300px;overflow:hidden;background:var(--bg)}
+.strip img{filter:saturate(.9)}
+.svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.svc{background:var(--bg);padding:26px 24px 28px;border-top:3px solid var(--plum);transition:background .2s}
+.svc:hover{background:#fbf8f3}
+.svc h3{font:400 20px/1.25 var(--serif);margin:0 0 10px}
+.svc p{margin:0;font-size:14.5px;line-height:1.55;color:var(--muted)}
+.also{margin-top:28px;font-size:15px;color:var(--muted)}
+.also b{color:var(--ink);font-weight:600}
+
+/* Brands */
+.brands{padding:64px 0;border-bottom:1px solid var(--line)}
+.brands .wrap{display:flex;align-items:baseline;gap:20px 48px;flex-wrap:wrap}
+.brands span{font-size:14px;color:var(--muted)}
+.brands ul{display:flex;flex-wrap:wrap;gap:12px 40px;margin:0;padding:0;list-style:none;font:400 17px/1 var(--serif);letter-spacing:.12em;text-transform:uppercase}
+
+/* Quote */
+.quote{position:relative;height:min(78vh,640px);overflow:hidden;background:var(--plum-dark)}
+.quote img{filter:brightness(.72)}
+.quote::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(42,20,39,.82) 0%,rgba(42,20,39,.2) 72%)}
+.quote figcaption{position:absolute;inset:0;z-index:1;display:flex;flex-direction:column;justify-content:flex-end;padding:0 0 72px}
+.quote blockquote{margin:0;max-width:22ch;font:400 clamp(30px,3.6vw,50px)/1.15 var(--serif);color:var(--on-dark)}
+.quote cite{display:block;margin-top:22px;font:400 12px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:#ddd0d9;font-style:normal}
+
+/* Visit */
+.visit{padding:110px 0;background:var(--plum-dark);color:var(--on-dark);--line:rgba(246,241,234,.16);--muted:var(--on-dark-muted);--ink:var(--on-dark)}
+.visit .label{color:var(--gold)}
+.visit .btn{background:var(--gold);color:var(--plum-dark)}
+.visit .btn:hover{background:#d6b471}
+.visit .link:hover{color:var(--gold);border-color:var(--gold)}
+.visit .grid{display:grid;grid-template-columns:5fr 6fr;gap:72px}
+.hours{width:100%;border-collapse:collapse;margin-top:8px}
+.hours td{padding:15px 0;border-bottom:1px solid var(--line);font-size:15.5px}
+.hours tr:first-child td{border-top:1px solid var(--ink)}
+.hours td:last-child{text-align:right;color:var(--muted);font-variant-numeric:tabular-nums}
+.hours tr.is-today td{color:var(--gold);font-weight:600}
+.hours tr.closed td:last-child{color:#93838f}
+.place p{margin:0}
+.place .addr{font:400 34px/1.2 var(--serif);margin:22px 0 14px}
+.place .sub{color:var(--muted);margin-bottom:36px}
+.facts{border-top:1px solid var(--ink);margin-bottom:40px}
+.facts div{display:flex;justify-content:space-between;gap:20px;padding:15px 0;border-bottom:1px solid var(--line);font-size:15.5px}
+.facts span{color:var(--muted)}
+.facts a{text-decoration:none;font-weight:600}
+.urgent{margin-top:48px;padding:26px 28px;border:1px solid rgba(201,164,92,.45)}
+.urgent p{margin:0;color:var(--muted);font-size:15px}
+.urgent strong{display:block;font:400 26px/1.2 var(--serif);color:var(--on-dark);margin-bottom:6px}
+.urgent a{color:var(--gold);font-weight:600;text-decoration:none}
+
+.ft{background:#1f0f1d;color:#a8979f;padding:40px 0 48px;font-size:13px}
+.ft .mark b{color:var(--on-dark);font-size:18px}
+.ft .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center}
+.callbar{display:none}
+
+@media (max-width:900px){
+  .hd .wrap{height:80px}
+  .hd nav{display:none}
+  .mark b{font-size:25px;white-space:nowrap}
+  .mark small{letter-spacing:.16em}
+  .plate{width:26px;height:36px}
+  .mark b{font-size:19px;letter-spacing:.1em}
+  .hero,.intro,.visit .grid{grid-template-columns:1fr;gap:44px}
+  .hero{padding-top:24px;padding-bottom:88px}
+  .hero figure{order:-1}
+  .hero-pic{aspect-ratio:4/3}
+  .intro p{margin-top:0}
+  .services,.visit{padding:80px 0}
+  .strip{grid-template-columns:1fr 1fr;gap:8px;margin-bottom:32px}
+  .strip div{height:150px}
+  .strip div:first-child{grid-column:1/-1;height:200px}
+  .svc-grid{grid-template-columns:1fr 1fr;gap:10px}
+  .svc{padding:20px 16px 22px}
+  .svc h3{font-size:17px}
+  .svc p{font-size:13.5px}
+  .brands ul{font-size:19px;gap:10px 26px}
+  .quote{height:520px}
+  .quote figcaption{padding-bottom:48px}
+  .ft{padding-bottom:110px}
+  .callbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:10;background:var(--bg);border-top:1px solid var(--line);padding:10px 12px calc(10px + env(safe-area-inset-bottom));gap:10px}
+  .callbar a{display:flex;align-items:center;justify-content:center;min-height:48px;font-size:14.5px;font-weight:600;text-decoration:none;border:1px solid var(--ink)}
+  .callbar a:first-child{background:var(--plum);border-color:var(--plum);color:#fff}
+}
+</style>
+</head>
+<body>
+<div class="note">Proposition de site non officielle, préparée pour La Clé du Bonheur par Jean Cazals. Informations à vérifier avec la boutique. <a href="https://client-contact.fr/">En savoir plus</a></div>
+
+<header class="hd">
+  <div class="wrap">
+    <a class="mark" href="#top" aria-label="La Clé du Bonheur, accueil">
+      <svg class="plate" viewBox="0 0 30 42" aria-hidden="true">
+        <rect x="1" y="1" width="28" height="40" rx="14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M15 12.5a4 4 0 0 1 2.2 7.35L18.5 29h-7l1.3-9.15A4 4 0 0 1 15 12.5z" fill="currentColor"/>
+      </svg>
+      <span><b>La Clé du Bonheur</b><small>Serrurerie · Paris 17<sup>e</sup></small></span>
+    </a>
+    <nav aria-label="Navigation"><a href="#services">Services</a><a href="#visite">Horaires et accès</a><a class="tel" href="tel:+33142462426">01 42 46 24 26</a></nav>
+  </div>
+</header>
+
+<main id="top">
+<section class="wrap hero">
+  <div>
+    <div class="label">13 rue Pierre Demours</div>
+    <h1>Votre porte, vos clés, votre tranquillité.</h1>
+    <p class="lede">Serrurerie, ouverture de porte, reproduction de clés et cordonnerie. Le serrurier de quartier des Ternes, avec un devis gratuit avant toute intervention.</p>
+    <div class="actions">
+      <a class="btn" href="tel:+33142462426">Appeler la boutique</a>
+      <a class="link" href="https://www.google.com/maps/dir/?api=1&destination=13+Rue+Pierre+Demours+75017+Paris" target="_blank" rel="noopener">Itinéraire</a>
+    </div>
+    <p class="today" id="today">Ouvert du lundi au samedi.</p>
+  </div>
+  <figure style="margin:0">
+    <div class="hero-pic"><img src="https://images.unsplash.com/photo-1683918891756-817074d0cca7?w=1400&q=80&auto=format&fit=crop" alt="Porte cochère en bois d’un immeuble parisien"></div>
+  </figure>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="intro">
+      <div><div class="label">Services</div><h2>Tout ce qui ouvre, ferme et se répare.</h2></div>
+      <p>Une porte qui ne s’ouvre plus, une serrure à renforcer, un double de clé ou un talon à refaire : un seul comptoir, rue Pierre Demours.</p>
+    </div>
+    <div class="strip">
+      <div><img src="https://images.unsplash.com/photo-1677951570313-b0750351c461?w=1200&q=78&auto=format&fit=crop" alt="Clé engagée dans une serrure de porte" loading="lazy"></div>
+      <div><img src="https://images.unsplash.com/photo-1756341782434-3020b9d17372?w=700&q=78&auto=format&fit=crop" alt="Mur de clés vierges prêtes à être reproduites" loading="lazy"></div>
+      <div><img src="https://images.unsplash.com/photo-1707109322343-3fe79f5d5c0b?w=700&q=78&auto=format&fit=crop" alt="Artisan travaillant une paire de chaussures sur l’établi" loading="lazy"></div>
+    </div>
+    <div class="svc-grid">
+      <article class="svc"><h3>Ouverture de porte</h3><p>Porte claquée ou clé perdue : on se déplace et on ouvre.</p></article>
+      <article class="svc"><h3>Portes blindées</h3><p>Pose et renforcement, avec devis gratuit avant les travaux.</p></article>
+      <article class="svc"><h3>Serrures A2P</h3><p>Serrures et cylindres certifiés, reconnus par les assurances.</p></article>
+      <article class="svc"><h3>Clé minute</h3><p>Le double de votre clé fait sur place, pendant que vous attendez.</p></article>
+      <article class="svc"><h3>Clé sur numéro</h3><p>Clés de sécurité commandées à partir du numéro de votre carte.</p></article>
+      <article class="svc"><h3>Talon minute</h3><p>Talons refaits rapidement, au comptoir.</p></article>
+      <article class="svc"><h3>Gravure et tampons</h3><p>Plaques de boîte aux lettres, d’interphone, tampons encreurs.</p></article>
+      <article class="svc"><h3>Plaques auto et moto</h3><p>Plaques d’immatriculation faites en boutique.</p></article>
+    </div>
+    <p class="also"><b>Aussi en boutique :</b> dépôt et retrait de colis.</p>
+  </div>
+</section>
+
+<section class="brands" aria-label="Marques de serrurerie">
+  <div class="wrap">
+    <span>Les marques que nous posons et reproduisons</span>
+    <ul><li>Fichet</li><li>Vachette</li><li>Bricard</li><li>Picard</li><li>Muel</li><li>JPM</li><li>Heracles</li><li>Montana</li></ul>
+  </div>
+</section>
+
+<figure class="quote" style="margin:0">
+  <img src="https://images.unsplash.com/photo-1678624451056-07439bc56ba7?w=2000&q=78&auto=format&fit=crop" alt="Façade haussmannienne et ses grandes portes en bois" loading="lazy">
+  <figcaption><div class="wrap">
+    <blockquote>« D’une grande gentillesse, très attentif et toujours à l’écoute. »</blockquote>
+    <cite>Avis client, Google</cite>
+  </div></figcaption>
+</figure>
+
+<section class="visit" id="visite">
+  <div class="wrap grid">
+    <div class="place">
+      <div class="label">Nous trouver</div>
+      <p class="addr">13 rue Pierre Demours<br>75017 Paris</p>
+      <p class="sub">À deux pas de la place des Ternes. Sans rendez-vous en boutique.</p>
+      <div class="facts">
+        <div><span>Métro</span>Ternes, ligne 2</div>
+        <div><span>Boutique</span><a href="tel:+33142462426">01 42 46 24 26</a></div>
+        <div><span>Devis</span>Gratuit</div>
+      </div>
+      <div class="actions">
+        <a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=13+Rue+Pierre+Demours+75017+Paris" target="_blank" rel="noopener">Itinéraire</a>
+        <a class="link" href="tel:+33142462426">Appeler</a>
+      </div>
+    </div>
+    <div>
+      <div class="label" style="margin-bottom:22px">Horaires de la boutique</div>
+      <table class="hours" id="hours">
+        <tr data-d="1"><td>Lundi</td><td>9 h – 18 h 30</td></tr>
+        <tr data-d="2"><td>Mardi</td><td>9 h – 18 h 30</td></tr>
+        <tr data-d="3"><td>Mercredi</td><td>9 h – 18 h 30</td></tr>
+        <tr data-d="4"><td>Jeudi</td><td>9 h – 18 h 30</td></tr>
+        <tr data-d="5"><td>Vendredi</td><td>9 h – 18 h 30</td></tr>
+        <tr data-d="6"><td>Samedi</td><td>9 h – 18 h 30</td></tr>
+        <tr data-d="0" class="closed"><td>Dimanche</td><td>Fermé</td></tr>
+      </table>
+      <div class="urgent">
+        <strong>Porte claquée, clé perdue ?</strong>
+        <p>Urgences serrurerie 7 j/7, 24 h/24 : <a href="tel:+33623922284">06 23 92 22 84</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="ft">
+  <div class="wrap">
+    <a class="mark" href="#top"><b>La Clé du Bonheur</b></a>
+    <span style="color:#d6c8d1">13 rue Pierre Demours · 75017 Paris · 01 42 46 24 26</span>
+    <span>Proposition non officielle réalisée par Jean Cazals · Photographies Unsplash</span>
+  </div>
+</footer>
+
+<div class="callbar"><a href="tel:+33142462426">Appeler</a><a href="https://www.google.com/maps/dir/?api=1&destination=13+Rue+Pierre+Demours+75017+Paris" target="_blank" rel="noopener">Itinéraire</a></div>
+
+<script>
+/* Today's opening, in Paris time, written as a plain sentence. Times in minutes since midnight. */
+(function(){
+  var day9=[[540,1110]],H={1:day9,2:day9,3:day9,4:day9,5:day9,6:day9};
+  var days=['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
+  var parts=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Paris',weekday:'short',hour:'2-digit',minute:'2-digit',hour12:false}).formatToParts(new Date());
+  var get=function(t){return (parts.find(function(p){return p.type===t;})||{}).value;};
+  var day=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(get('weekday'));
+  var now=(+get('hour')%24)*60+(+get('minute'));
+  var fmt=function(m){return Math.floor(m/60)+' h'+(m%60?' '+String(m%60).padStart(2,'0'):'');};
+  var row=document.querySelector('#hours tr[data-d="'+day+'"]');if(row)row.classList.add('is-today');
+  var el=document.getElementById('today'),slots=H[day]||[];
+  for(var i=0;i<slots.length;i++){
+    if(now>=slots[i][0]&&now<slots[i][1]){el.innerHTML='<strong>Ouvert</strong> aujourd’hui jusqu’à '+fmt(slots[i][1])+'.';return;}
+    if(now<slots[i][0]){el.innerHTML='<strong>Fermé</strong> pour le moment · ouvre à '+fmt(slots[i][0])+'.';return;}
+  }
+  for(var d=1;d<=7;d++){var n=(day+d)%7;if(H[n]){el.innerHTML='<strong>Fermé</strong> · réouverture '+days[n]+' à '+fmt(H[n][0][0])+'.';break;}}
+})();
+</script>
+</body>
+</html>
