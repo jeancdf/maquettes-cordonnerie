@@ -11,7 +11,8 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231d1a16'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia' font-size='17' fill='%23f4f0e9'%3EC%3C/text%3E%3C/svg%3E">
 <style>
 :root{
-  --bg:#f4f0e9;--bg-2:#ebe5da;--ink:#1d1a16;--muted:#6e665c;--line:#d9d1c4;--accent:#4a3426;
+  --bg:#f3ebdf;--bg-2:#e8dccb;--ink:#1f1813;--muted:#6f6052;--line:#dccdb8;--accent:#7a2f1e;--accent-2:#62251a;--brass:#c79a52;
+  --dark:#2a1e17;--dark-2:#34261d;--on-dark:#f3ebdf;--on-dark-muted:#cbb9a5;
   --serif:'EB Garamond',Garamond,Georgia,serif;--sans:'Manrope',system-ui,sans-serif;
 }
 *{box-sizing:border-box}
@@ -25,7 +26,8 @@ a{color:inherit}
 
 /* Header */
 .hd .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;height:96px}
-.mark{text-decoration:none;display:block;line-height:1}
+.mark{text-decoration:none;display:flex;align-items:center;gap:14px;line-height:1}
+.seal{width:50px;height:50px;flex:none;color:var(--accent)}
 .mark b{display:block;font:400 27px/1 var(--serif);letter-spacing:.06em;font-variant-caps:all-small-caps}
 .mark small{display:block;margin-top:7px;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
 .hd nav{display:flex;align-items:center;gap:34px;font-size:14px}
@@ -35,12 +37,12 @@ a{color:inherit}
 
 /* Hero */
 .hero{display:grid;grid-template-columns:5fr 6fr;gap:72px;align-items:end;padding-top:40px;padding-bottom:120px}
-.label{font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+.label{font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);font-weight:600}
 h1{font:400 clamp(44px,5.6vw,78px)/1.02 var(--serif);letter-spacing:-.015em;margin:28px 0 30px}
 .lede{max-width:27em;color:var(--muted);margin:0 0 40px}
 .actions{display:flex;flex-wrap:wrap;align-items:center;gap:28px}
-.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 30px;background:var(--ink);color:var(--bg);text-decoration:none;font-size:14.5px;font-weight:600;letter-spacing:.04em;transition:background .2s}
-.btn:hover{background:var(--accent)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 30px;background:var(--accent);color:#fff;text-decoration:none;font-size:14.5px;font-weight:600;letter-spacing:.04em;transition:background .2s}
+.btn:hover{background:var(--accent-2)}
 .link{font-size:14.5px;font-weight:600;text-decoration:none;border-bottom:1px solid var(--ink);padding-bottom:3px}
 .link:hover{color:var(--accent);border-color:var(--accent)}
 .today{margin-top:48px;padding-top:20px;border-top:1px solid var(--line);font-size:14px;color:var(--muted)}
@@ -50,7 +52,7 @@ h1{font:400 clamp(44px,5.6vw,78px)/1.02 var(--serif);letter-spacing:-.015em;marg
 .caption{margin-top:12px;font-size:12px;color:var(--muted)}
 
 /* Services */
-.services{border-top:1px solid var(--line);padding:110px 0}
+.services{background:var(--bg-2);padding:110px 0}
 .intro{display:grid;grid-template-columns:5fr 6fr;gap:72px;margin-bottom:72px}
 h2{font:400 clamp(34px,3.8vw,52px)/1.08 var(--serif);letter-spacing:-.01em;margin:22px 0 0}
 .intro p{color:var(--muted);margin:46px 0 0;max-width:32em}
@@ -58,7 +60,7 @@ h2{font:400 clamp(34px,3.8vw,52px)/1.08 var(--serif);letter-spacing:-.01em;margi
 .col .pic{aspect-ratio:4/5;overflow:hidden;background:var(--bg-2);margin-bottom:28px}
 .col .pic img{filter:saturate(.85);transition:transform 1.2s ease}
 .col:hover .pic img{transform:scale(1.025)}
-.col .num{font:400 15px/1 var(--serif);color:var(--muted)}
+.col .num{font:500 17px/1 var(--serif);color:var(--accent)}
 .col h3{font:400 30px/1.15 var(--serif);margin:10px 0 14px}
 .col p{margin:0 0 18px;color:var(--muted)}
 .col ul{margin:0;padding:0;list-style:none;border-top:1px solid var(--line)}
@@ -66,13 +68,18 @@ h2{font:400 clamp(34px,3.8vw,52px)/1.08 var(--serif);letter-spacing:-.01em;margi
 
 /* Quote */
 .quote{position:relative;height:min(78vh,640px);overflow:hidden;background:var(--ink)}
-.quote img{filter:saturate(.75) brightness(.62)}
+.quote img{filter:brightness(.7)}
+.quote::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(42,30,23,.75) 0%,rgba(42,30,23,.15) 70%)}
+.quote figcaption{z-index:1}
 .quote figcaption{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:0 0 72px}
 .quote blockquote{margin:0;max-width:22ch;font:400 clamp(30px,3.6vw,50px)/1.15 var(--serif);color:#f4f0e9}
 .quote cite{display:block;margin-top:22px;font:400 12px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:#d8cfc2;font-style:normal}
 
 /* Visit */
-.visit{padding:110px 0}
+.visit{padding:110px 0;background:var(--dark);color:var(--on-dark);--line:rgba(243,235,223,.16);--muted:var(--on-dark-muted);--ink:var(--on-dark);--accent:var(--brass)}
+.visit .btn{background:var(--brass);color:var(--dark)}
+.visit .btn:hover{background:#d8ad68}
+.visit .hours tr.closed td:last-child{color:#8c7a69}
 .visit .grid{display:grid;grid-template-columns:5fr 6fr;gap:72px}
 .hours{width:100%;border-collapse:collapse;margin-top:8px}
 .hours td{padding:15px 0;border-bottom:1px solid var(--line);font-size:15.5px}
@@ -92,13 +99,16 @@ h2{font:400 clamp(34px,3.8vw,52px)/1.08 var(--serif);letter-spacing:-.01em;margi
 .rating{display:flex;align-items:baseline;gap:18px;margin-top:56px;color:var(--muted);font-size:14px}
 .rating b{font:400 46px/1 var(--serif);color:var(--ink)}
 
-.ft{border-top:1px solid var(--line);padding:40px 0 48px;font-size:13px;color:var(--muted)}
+.ft{background:#211812;color:#a8968a;padding:40px 0 48px;font-size:13px}
+.ft .mark b{color:var(--on-dark)}
 .ft .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center}
 .callbar{display:none}
 
 @media (max-width:900px){
   .hd .wrap{height:80px}
-  .hd nav a:not(.tel){display:none}
+  .hd nav{display:none}
+  .mark b{font-size:24px;white-space:nowrap}
+  .mark small{letter-spacing:.16em}
   .hero,.intro,.visit .grid{grid-template-columns:1fr;gap:44px}
   .hero{padding-top:16px;padding-bottom:88px}
   .hero figure{order:-1}
@@ -112,7 +122,8 @@ h2{font:400 clamp(34px,3.8vw,52px)/1.08 var(--serif);letter-spacing:-.01em;margi
   .ft{padding-bottom:110px}
   .callbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:10;background:var(--bg);border-top:1px solid var(--line);padding:10px 12px calc(10px + env(safe-area-inset-bottom));gap:10px}
   .callbar a{display:flex;align-items:center;justify-content:center;min-height:48px;font-size:14.5px;font-weight:600;text-decoration:none;border:1px solid var(--ink)}
-  .callbar a:first-child{background:var(--ink);color:var(--bg)}
+  .callbar a:first-child{background:var(--accent);border-color:var(--accent);color:#fff}
+  .seal{width:42px;height:42px}
 }
 </style>
 </head>
@@ -121,7 +132,16 @@ h2{font:400 clamp(34px,3.8vw,52px)/1.08 var(--serif);letter-spacing:-.01em;margi
 
 <header class="hd">
   <div class="wrap">
-    <a class="mark" href="#top"><b>Le Cordouanier</b><small>Cordonnerie · Paris 17<sup>e</sup></small></a>
+    <a class="mark" href="#top" aria-label="Le Cordouanier, accueil">
+      <svg class="seal" viewBox="0 0 120 120" aria-hidden="true">
+        <defs><path id="ring" d="M60,60 m-45,0 a45,45 0 1,1 90,0 a45,45 0 1,1 -90,0"/></defs>
+        <circle cx="60" cy="60" r="58" fill="none" stroke="currentColor" stroke-width="2.5"/>
+        <circle cx="60" cy="60" r="34" fill="none" stroke="currentColor" stroke-width="1.2"/>
+        <text font-family="Manrope, sans-serif" font-size="11" font-weight="600" letter-spacing="3.4" fill="currentColor"><textPath href="#ring">CORDONNERIE · CLÉS · GRAVURE ·</textPath></text>
+        <text x="60" y="71" text-anchor="middle" font-family="EB Garamond, Georgia, serif" font-size="33" fill="currentColor">LC</text>
+      </svg>
+      <span><b>Le Cordouanier</b><small>Cordonnerie · Paris 17<sup>e</sup></small></span>
+    </a>
     <nav aria-label="Navigation"><a href="#savoir-faire">Savoir-faire</a><a href="#visite">Horaires et accès</a><a class="tel" href="tel:+33767755401">07 67 75 54 01</a></nav>
   </div>
 </header>
@@ -139,7 +159,7 @@ h2{font:400 clamp(34px,3.8vw,52px)/1.08 var(--serif);letter-spacing:-.01em;margi
     <p class="today" id="today">Ouvert du mardi au samedi.</p>
   </div>
   <figure style="margin:0">
-    <div class="hero-pic"><img src="https://images.unsplash.com/photo-1529953717281-81a40b131119?w=1400&q=80&auto=format&fit=crop" alt="Établi de cordonnier : outils et botte en cuir"></div>
+    <div class="hero-pic"><img src="https://images.unsplash.com/photo-1611523794717-4d1f87dabf3b?w=1400&q=80&auto=format&fit=crop" alt="Artisan au travail dans un atelier de cuir, entouré de ses machines et de rouleaux de cuir"></div>
   </figure>
 </section>
 
@@ -165,7 +185,7 @@ h2{font:400 clamp(34px,3.8vw,52px)/1.08 var(--serif);letter-spacing:-.01em;margi
         <ul><li>Clés plates et de sécurité</li><li>Clés de voiture et télécommandes</li><li>Badges et bips d’immeuble</li></ul>
       </article>
       <article class="col">
-        <div class="pic"><img src="https://images.unsplash.com/photo-1577467013350-7c22a844e1a9?w=900&q=78&auto=format&fit=crop" alt="Brosses et cire pour l’entretien du cuir" loading="lazy"></div>
+        <div class="pic"><img src="https://images.unsplash.com/photo-1776774378708-c313ad890ed0?w=900&q=78&auto=format&fit=crop" alt="Plaque en laiton gravée fixée sur un mur de briques" loading="lazy"></div>
         <div class="num">III</div>
         <h3>Gravure et entretien</h3>
         <p>Les petites choses qui font une porte, une boîte aux lettres, une paire bien tenue.</p>
@@ -176,7 +196,7 @@ h2{font:400 clamp(34px,3.8vw,52px)/1.08 var(--serif);letter-spacing:-.01em;margi
 </section>
 
 <figure class="quote" style="margin:0">
-  <img src="https://images.unsplash.com/photo-1511283402428-355853756676?w=2000&q=78&auto=format&fit=crop" alt="Paire de bottes en cuir usées" loading="lazy">
+  <img src="https://images.unsplash.com/photo-1653868249587-284b275a1c67?w=2000&q=78&auto=format&fit=crop" alt="Mains tenant une chaussure en cuir brun fraîchement entretenue" loading="lazy">
   <figcaption><div class="wrap">
     <blockquote>« Il a fait des miracles sur des chaussures que je pensais fichues. »</blockquote>
     <cite>Avis client, Google</cite>
@@ -219,6 +239,7 @@ h2{font:400 clamp(34px,3.8vw,52px)/1.08 var(--serif);letter-spacing:-.01em;margi
 <footer class="ft">
   <div class="wrap">
     <a class="mark" href="#top"><b>Le Cordouanier</b></a>
+    <span style="color:#d8c7b2">10 rue Pierre Demours · 75017 Paris · 07 67 75 54 01</span>
     <span>Proposition non officielle réalisée par Jean Cazals · Photographies Unsplash</span>
   </div>
 </footer>
