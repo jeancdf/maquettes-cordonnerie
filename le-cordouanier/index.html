@@ -5,316 +5,212 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>Le Cordouanier — Cordonnerie, clés et gravure, Paris 17e (proposition de site)</title>
-<meta name="description" content="Cordonnerie traditionnelle, reproduction de clés et de badges, gravure, 10 rue Pierre Demours, Paris 17e.">
+<meta name="description" content="Cordonnerie traditionnelle, reproduction de clés et de badges, gravure. 10 rue Pierre Demours, Paris 17e.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500..800;1,6..96,500..800&family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%231b120d'/%3E%3Ctext x='16' y='21.5' text-anchor='middle' font-family='Georgia' font-style='italic' font-size='16' fill='%23d4a55a'%3ELC%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Manrope:wght@400;500;600&display=swap">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231d1a16'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia' font-size='17' fill='%23f4f0e9'%3EC%3C/text%3E%3C/svg%3E">
 <style>
 :root{
-  --night:#17100b;--night-2:#231811;--paper:#f5ede0;--kraft:#e9dcc6;--line:#dccbb1;
-  --ink:#1d140e;--muted:#6f5d4e;--brass:#d4a55a;--brass-2:#b9893f;--oxblood:#8c2f1c;
-  --fd:'Bodoni Moda',Georgia,serif;--fb:'Manrope',system-ui,sans-serif;--fm:'IBM Plex Mono',ui-monospace,monospace;
+  --bg:#f4f0e9;--bg-2:#ebe5da;--ink:#1d1a16;--muted:#6e665c;--line:#d9d1c4;--accent:#4a3426;
+  --serif:'EB Garamond',Garamond,Georgia,serif;--sans:'Manrope',system-ui,sans-serif;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.6 var(--fb);-webkit-font-smoothing:antialiased;overflow-x:hidden}
-img{display:block;max-width:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16.5px/1.7 var(--sans);-webkit-font-smoothing:antialiased}
+img{display:block;width:100%;height:100%;object-fit:cover}
 a{color:inherit}
-.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
-.proto{background:#0e0906;color:#c9b8a3;font-size:12.5px;text-align:center;padding:7px 16px;letter-spacing:.01em}
-.proto a{color:var(--brass)}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+.note{border-bottom:1px solid var(--line);color:var(--muted);font-size:12.5px;text-align:center;padding:8px 16px}
+.note a{color:var(--ink)}
 
 /* Header */
-.hd{position:absolute;left:0;right:0;z-index:5;color:var(--paper)}
-.hd .wrap{display:flex;align-items:center;justify-content:space-between;height:92px}
-.brand{display:flex;align-items:center;gap:14px;text-decoration:none}
-.seal{width:58px;height:58px;flex:none}
-.brand-name{display:block;font:italic 600 26px/1 var(--fd);letter-spacing:-.01em}
-.brand-name span{font-style:normal;font-size:15px;vertical-align:4px;margin-right:2px;letter-spacing:.06em}
-.brand-sub{display:block;font:500 11px/1 var(--fm);letter-spacing:.2em;text-transform:uppercase;color:var(--brass);margin-top:6px}
-.hd nav{display:flex;gap:30px;font-weight:600;font-size:14.5px;letter-spacing:.02em}
-.hd nav a{text-decoration:none;opacity:.82}
-.hd nav a:hover{opacity:1}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:2px;background:var(--brass);color:var(--night);font:700 15.5px/1 var(--fb);letter-spacing:.02em;text-decoration:none;border:0;transition:background .15s,color .15s}
-.btn:hover{background:#e3b86e}
-.btn svg{width:18px;height:18px;flex:none}
-.btn.line{background:transparent;color:inherit;box-shadow:inset 0 0 0 1.5px currentColor}
-.btn.line:hover{background:rgba(245,237,224,.08)}
-.btn.sm{min-height:44px;padding:0 20px;font-size:14.5px}
+.hd .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;height:96px}
+.mark{text-decoration:none;display:block;line-height:1}
+.mark b{display:block;font:400 27px/1 var(--serif);letter-spacing:.06em;font-variant-caps:all-small-caps}
+.mark small{display:block;margin-top:7px;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+.hd nav{display:flex;align-items:center;gap:34px;font-size:14px}
+.hd nav a{text-decoration:none;color:var(--muted)}
+.hd nav a:hover{color:var(--ink)}
+.hd nav .tel{color:var(--ink);font-weight:600;font-variant-numeric:tabular-nums}
 
 /* Hero */
-.hero{position:relative;min-height:min(820px,100svh);display:flex;align-items:flex-end;color:var(--paper);background:var(--night)}
-.hero-img{position:absolute;inset:0;background:url(https://images.unsplash.com/photo-1529953717281-81a40b131119?w=2000&q=78&auto=format&fit=crop) center 40%/cover}
-.hero-img::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(23,16,11,.72) 0%,rgba(23,16,11,.35) 38%,rgba(23,16,11,.88) 78%,var(--night) 100%)}
-.hero .wrap{position:relative;padding-top:150px;padding-bottom:72px;width:100%}
-.kicker{font:500 12.5px/1 var(--fm);letter-spacing:.22em;text-transform:uppercase;color:var(--brass)}
-h1{font:500 clamp(46px,7.6vw,104px)/.95 var(--fd);letter-spacing:-.025em;margin:22px 0 26px;max-width:12ch}
-h1 em{font-style:italic;font-weight:600;color:var(--brass)}
-.hero p.lede{font-size:clamp(17px,1.6vw,20px);max-width:36em;color:#e1d5c4;margin:0 0 34px}
-.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
-.sign{display:inline-flex;align-items:stretch;margin-left:8px;font:600 12.5px/1 var(--fm);letter-spacing:.16em;text-transform:uppercase}
-.sign b{padding:10px 12px;background:var(--paper);color:var(--night)}
-.sign span{padding:10px 12px;box-shadow:inset 0 0 0 1.5px rgba(245,237,224,.45);color:#e1d5c4;letter-spacing:.08em;text-transform:none;font-family:var(--fb);font-size:14px;font-weight:600}
-.sign.closed b{background:transparent;color:#e1d5c4;box-shadow:inset 0 0 0 1.5px rgba(245,237,224,.45);border-right:0}
+.hero{display:grid;grid-template-columns:5fr 6fr;gap:72px;align-items:end;padding-top:40px;padding-bottom:120px}
+.label{font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+h1{font:400 clamp(44px,5.6vw,78px)/1.02 var(--serif);letter-spacing:-.015em;margin:28px 0 30px}
+.lede{max-width:27em;color:var(--muted);margin:0 0 40px}
+.actions{display:flex;flex-wrap:wrap;align-items:center;gap:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 30px;background:var(--ink);color:var(--bg);text-decoration:none;font-size:14.5px;font-weight:600;letter-spacing:.04em;transition:background .2s}
+.btn:hover{background:var(--accent)}
+.link{font-size:14.5px;font-weight:600;text-decoration:none;border-bottom:1px solid var(--ink);padding-bottom:3px}
+.link:hover{color:var(--accent);border-color:var(--accent)}
+.today{margin-top:48px;padding-top:20px;border-top:1px solid var(--line);font-size:14px;color:var(--muted)}
+.today strong{color:var(--ink);font-weight:600}
+.hero-pic{aspect-ratio:4/5;overflow:hidden;background:var(--bg-2)}
+.hero-pic img{filter:saturate(.85)}
+.caption{margin-top:12px;font-size:12px;color:var(--muted)}
 
-/* Ribbon */
-.ribbon{background:var(--brass);color:var(--night);overflow:hidden;border-top:1px solid #0e0906}
-.ribbon-track{display:flex;width:max-content;animation:slide 38s linear infinite}
-.ribbon span{font:italic 600 22px/1 var(--fd);padding:18px 0;white-space:nowrap}
-.ribbon i{display:inline-block;width:7px;height:7px;border:1.5px solid var(--night);transform:rotate(45deg);margin:0 26px;vertical-align:4px}
-@keyframes slide{to{transform:translateX(-50%)}}
-@media (prefers-reduced-motion:reduce){.ribbon-track{animation:none}}
+/* Services */
+.services{border-top:1px solid var(--line);padding:110px 0}
+.intro{display:grid;grid-template-columns:5fr 6fr;gap:72px;margin-bottom:72px}
+h2{font:400 clamp(34px,3.8vw,52px)/1.08 var(--serif);letter-spacing:-.01em;margin:22px 0 0}
+.intro p{color:var(--muted);margin:46px 0 0;max-width:32em}
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+.col .pic{aspect-ratio:4/5;overflow:hidden;background:var(--bg-2);margin-bottom:28px}
+.col .pic img{filter:saturate(.85);transition:transform 1.2s ease}
+.col:hover .pic img{transform:scale(1.025)}
+.col .num{font:400 15px/1 var(--serif);color:var(--muted)}
+.col h3{font:400 30px/1.15 var(--serif);margin:10px 0 14px}
+.col p{margin:0 0 18px;color:var(--muted)}
+.col ul{margin:0;padding:0;list-style:none;border-top:1px solid var(--line)}
+.col li{padding:11px 0;border-bottom:1px solid var(--line);font-size:15px}
 
-/* Sections */
-section.s{padding:110px 0}
-.head{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:56px}
-h2{font:500 clamp(36px,4.6vw,64px)/1 var(--fd);letter-spacing:-.02em;margin:16px 0 0}
-h2 em{font-style:italic;color:var(--oxblood)}
-.head p{color:var(--muted);margin:0;max-width:30em;justify-self:end}
-
-/* Tickets */
-.tickets{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
-.ticket{background:var(--kraft);position:relative;display:flex;flex-direction:column;box-shadow:0 1px 0 var(--line)}
-.ticket::before{content:"";position:absolute;left:50%;top:-9px;width:18px;height:18px;margin-left:-9px;border-radius:50%;background:var(--paper);box-shadow:inset 0 0 0 1.5px var(--line)}
-.ticket .pic{aspect-ratio:4/3;overflow:hidden;margin:22px 22px 0}
-.ticket .pic img{width:100%;height:100%;object-fit:cover;filter:sepia(.18) contrast(1.04);transition:transform .6s ease}
-.ticket:hover .pic img{transform:scale(1.04)}
-.ticket .body{padding:22px 24px 26px;border-top:2px dashed #c9b493;margin-top:22px;flex:1}
-.no{display:flex;justify-content:space-between;font:600 12px/1 var(--fm);letter-spacing:.16em;text-transform:uppercase;color:var(--oxblood)}
-.ticket h3{font:600 30px/1.05 var(--fd);margin:14px 0 14px;letter-spacing:-.01em}
-.ticket ul{margin:0;padding:0;list-style:none}
-.ticket li{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid #d7c5a6;font-size:16px}
-.ticket li:last-child{border-bottom:0}
-.ticket li small{font:500 12px/1.9 var(--fm);color:var(--muted);letter-spacing:.06em;white-space:nowrap}
-.extra{margin-top:26px;display:flex;align-items:center;gap:18px;padding:20px 24px;border:1.5px solid var(--line)}
-.extra img{width:84px;height:64px;object-fit:cover;flex:none}
-.extra p{margin:0;color:var(--muted)}
-.extra b{color:var(--ink)}
-
-/* Split */
-.split{background:var(--night);color:var(--paper);display:grid;grid-template-columns:1fr 1fr;min-height:640px}
-.split .photo{background:url(https://images.unsplash.com/photo-1511283402428-355853756676?w=1400&q=78&auto=format&fit=crop) center/cover;min-height:380px}
-.split .txt{padding:96px clamp(24px,6vw,88px);display:flex;flex-direction:column;justify-content:center}
-.split h2{color:var(--paper)}
-.split h2 em{color:var(--brass)}
-.split p{color:#cdbfad;max-width:30em;margin:24px 0 0}
-.quote{margin:40px 0 0;padding:0 0 0 22px;border-left:2px solid var(--brass);font:italic 500 23px/1.35 var(--fd);color:var(--paper)}
-.quote footer{font:500 12px/1 var(--fm);letter-spacing:.16em;text-transform:uppercase;color:var(--brass);margin-top:14px;font-style:normal}
-
-/* Steps */
-.steps{display:grid;grid-template-columns:repeat(3,1fr);border-top:1.5px solid var(--ink)}
-.step{padding:34px 34px 10px 0}
-.step+.step{padding-left:34px;border-left:1px solid var(--line)}
-.step .n{font:italic 500 72px/1 var(--fd);color:var(--oxblood)}
-.step h3{font:700 20px/1.3 var(--fb);margin:18px 0 8px}
-.step p{margin:0;color:var(--muted)}
-
-/* Proof */
-.proof{display:grid;grid-template-columns:auto 1fr;gap:56px;align-items:center;padding:56px;background:var(--kraft)}
-.score{font:500 120px/.85 var(--fd);letter-spacing:-.04em}
-.score small{display:block;font:600 12px/1 var(--fm);letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-top:16px}
-.proof blockquote{margin:0;font:italic 500 clamp(24px,2.6vw,32px)/1.25 var(--fd)}
-.proof blockquote+blockquote{margin-top:22px;font-size:clamp(19px,1.8vw,23px);color:var(--muted)}
+/* Quote */
+.quote{position:relative;height:min(78vh,640px);overflow:hidden;background:var(--ink)}
+.quote img{filter:saturate(.75) brightness(.62)}
+.quote figcaption{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:0 0 72px}
+.quote blockquote{margin:0;max-width:22ch;font:400 clamp(30px,3.6vw,50px)/1.15 var(--serif);color:#f4f0e9}
+.quote cite{display:block;margin-top:22px;font:400 12px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:#d8cfc2;font-style:normal}
 
 /* Visit */
-.visit{background:var(--night);color:var(--paper)}
-.visit .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:64px}
-.visit h2{color:var(--paper)}
-.visit h2 em{color:var(--brass)}
-.hours{margin-top:40px;width:100%;border-collapse:collapse;font-size:17px}
-.hours td{padding:14px 0;border-bottom:1px solid rgba(245,237,224,.14)}
-.hours td:first-child{font-weight:600}
-.hours td:last-child{text-align:right;color:#cdbfad;font-variant-numeric:tabular-nums}
-.hours tr.off td:last-child{color:#7f6f60}
-.hours tr.today td{color:var(--brass)}
-.hours tr.today td:first-child::after{content:"aujourd’hui";font:500 10.5px/1 var(--fm);letter-spacing:.16em;text-transform:uppercase;margin-left:12px;padding:4px 7px;box-shadow:inset 0 0 0 1px currentColor;vertical-align:3px}
-.card{background:var(--night-2);padding:40px;align-self:start}
-.card .addr{font:500 34px/1.1 var(--fd);margin:0 0 10px}
-.card p{color:#cdbfad;margin:0 0 28px}
-.card .row{display:flex;gap:14px;align-items:flex-start;padding:16px 0;border-top:1px solid rgba(245,237,224,.12);color:#e1d5c4}
-.card .row svg{width:22px;height:22px;flex:none;color:var(--brass);margin-top:2px}
-.card .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.visit{padding:110px 0}
+.visit .grid{display:grid;grid-template-columns:5fr 6fr;gap:72px}
+.hours{width:100%;border-collapse:collapse;margin-top:8px}
+.hours td{padding:15px 0;border-bottom:1px solid var(--line);font-size:15.5px}
+.hours tr:first-child td{border-top:1px solid var(--ink)}
+.hours td:last-child{text-align:right;color:var(--muted);font-variant-numeric:tabular-nums}
+.hours tr.is-today td{color:var(--ink);font-weight:600}
+.hours tr.closed td:last-child{color:#a59c90}
+.place p{margin:0}
+.place .addr{font:400 34px/1.2 var(--serif);margin:22px 0 14px}
+.place .sub{color:var(--muted);margin-bottom:36px}
+.facts{border-top:1px solid var(--ink);margin-bottom:40px}
+.facts div{display:flex;justify-content:space-between;gap:20px;padding:15px 0;border-bottom:1px solid var(--line);font-size:15.5px}
+.facts span{color:var(--muted)}
+.facts a{text-decoration:none;font-weight:600}
 
-/* FAQ */
-.faq{max-width:860px}
-.faq details{border-bottom:1px solid var(--line)}
-.faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:20px;padding:26px 0;font:500 clamp(21px,2.2vw,26px)/1.25 var(--fd)}
-.faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"+";font:300 30px/1 var(--fb);color:var(--oxblood);transition:transform .2s}
-.faq details[open] summary::after{transform:rotate(45deg)}
-.faq details p{margin:0 0 26px;color:var(--muted);max-width:40em}
+/* Rating */
+.rating{display:flex;align-items:baseline;gap:18px;margin-top:56px;color:var(--muted);font-size:14px}
+.rating b{font:400 46px/1 var(--serif);color:var(--ink)}
 
-.ft{background:#0e0906;color:#a8978a;padding:44px 0 110px;font-size:14px}
+.ft{border-top:1px solid var(--line);padding:40px 0 48px;font-size:13px;color:var(--muted)}
 .ft .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center}
-.ft .brand{color:var(--paper)}
 .callbar{display:none}
 
 @media (max-width:900px){
-  .hd nav{display:none}
   .hd .wrap{height:80px}
-  .seal{width:48px;height:48px}
-  .brand-name{font-size:22px}
-  .hero .wrap{padding-top:130px;padding-bottom:48px}
-  .sign{margin-left:0}
-  section.s{padding:76px 0}
-  .head,.split,.visit .grid,.proof{grid-template-columns:1fr}
-  .head p{justify-self:start}
-  .tickets{grid-template-columns:1fr}
-  .split .txt{padding:64px 22px}
-  .steps{grid-template-columns:1fr}
-  .step,.step+.step{padding:28px 0;border-left:0;border-bottom:1px solid var(--line)}
-  .proof{padding:34px 26px;gap:28px}
-  .score{font-size:92px}
-  .card{padding:28px}
-  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--night);padding:10px 12px calc(10px + env(safe-area-inset-bottom));gap:10px;box-shadow:0 -10px 30px rgba(0,0,0,.25)}
-  .callbar .btn{flex:1;min-height:48px}
-  .callbar .btn.line{color:var(--paper)}
+  .hd nav a:not(.tel){display:none}
+  .hero,.intro,.visit .grid{grid-template-columns:1fr;gap:44px}
+  .hero{padding-top:16px;padding-bottom:88px}
+  .hero figure{order:-1}
+  .hero-pic{aspect-ratio:4/3}
+  .intro p{margin-top:0}
+  .services,.visit{padding:80px 0}
+  .cols{grid-template-columns:1fr;gap:64px}
+  .col .pic{aspect-ratio:3/2}
+  .quote{height:520px}
+  .quote figcaption{padding-bottom:48px}
+  .ft{padding-bottom:110px}
+  .callbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:10;background:var(--bg);border-top:1px solid var(--line);padding:10px 12px calc(10px + env(safe-area-inset-bottom));gap:10px}
+  .callbar a{display:flex;align-items:center;justify-content:center;min-height:48px;font-size:14.5px;font-weight:600;text-decoration:none;border:1px solid var(--ink)}
+  .callbar a:first-child{background:var(--ink);color:var(--bg)}
 }
 </style>
 </head>
 <body>
-<div class="proto">Proposition de site non officielle, préparée pour Le Cordouanier par Jean Cazals. Informations à vérifier avec la boutique. <a href="https://client-contact.fr/">En savoir plus</a></div>
+<div class="note">Proposition de site non officielle, préparée pour Le Cordouanier par Jean Cazals. Informations à vérifier avec la boutique. <a href="https://client-contact.fr/">En savoir plus</a></div>
 
 <header class="hd">
   <div class="wrap">
-    <a class="brand" href="#top" aria-label="Le Cordouanier, accueil">
-      <svg class="seal" viewBox="0 0 120 120" aria-hidden="true">
-        <defs><path id="ring" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs>
-        <circle cx="60" cy="60" r="58" fill="none" stroke="#d4a55a" stroke-width="2"/>
-        <circle cx="60" cy="60" r="33" fill="none" stroke="#d4a55a" stroke-width="1"/>
-        <text font-family="IBM Plex Mono, monospace" font-size="10.5" font-weight="600" letter-spacing="3.1" fill="#d4a55a"><textPath href="#ring">CORDONNERIE · CLÉS · GRAVURE · PARIS 17 ·</textPath></text>
-        <text x="60" y="71" text-anchor="middle" font-family="Bodoni Moda, Georgia, serif" font-style="italic" font-weight="600" font-size="32" fill="#f5ede0">LC</text>
-      </svg>
-      <span><span class="brand-name"><span>LE</span> Cordouanier</span><span class="brand-sub">Cordonnerie traditionnelle</span></span>
-    </a>
-    <nav aria-label="Navigation"><a href="#metiers">Métiers</a><a href="#atelier">L’atelier</a><a href="#visite">Horaires & accès</a><a href="#questions">Questions</a></nav>
-    <a class="btn sm line" href="tel:+33767755401">07 67 75 54 01</a>
+    <a class="mark" href="#top"><b>Le Cordouanier</b><small>Cordonnerie · Paris 17<sup>e</sup></small></a>
+    <nav aria-label="Navigation"><a href="#savoir-faire">Savoir-faire</a><a href="#visite">Horaires et accès</a><a class="tel" href="tel:+33767755401">07 67 75 54 01</a></nav>
   </div>
 </header>
 
 <main id="top">
-<section class="hero">
-  <div class="hero-img" role="img" aria-label="Établi de cordonnier avec outils et botte en cuir"></div>
-  <div class="wrap">
-    <div class="kicker">10 rue Pierre Demours · Paris 17e</div>
-    <h1>Une bonne paire ne se jette pas. <em>Elle se répare.</em></h1>
-    <p class="lede">Talons, semelles, coutures : on remet vos chaussures sur pied. Et pendant que vous y êtes, on copie vos clés et vos badges d’immeuble.</p>
-    <div class="ctas">
-      <a class="btn" href="tel:+33767755401"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 3.5h3l1.5 4.5-2 1.3a11.5 11.5 0 0 0 5.7 5.7l1.3-2 4.5 1.5v3a2 2 0 0 1-2 2A16.5 16.5 0 0 1 4.5 5.5a2 2 0 0 1 2-2z"/></svg>Appeler la boutique</a>
-      <a class="btn line" href="https://www.google.com/maps/dir/?api=1&destination=10+Rue+Pierre+Demours+75017+Paris" target="_blank" rel="noopener">Y aller</a>
-      <div class="sign" id="sign" aria-live="polite"><b id="sign-a">Horaires</b><span id="sign-b">mar → sam</span></div>
+<section class="wrap hero">
+  <div>
+    <div class="label">10 rue Pierre Demours</div>
+    <h1>Une bonne paire ne se jette pas. Elle se répare.</h1>
+    <p class="lede">Cordonnerie traditionnelle, clés, badges d’immeuble et gravure. Un comptoir de quartier où l’on prend le temps de regarder votre paire, et où le prix est annoncé avant le travail.</p>
+    <div class="actions">
+      <a class="btn" href="tel:+33767755401">Appeler la boutique</a>
+      <a class="link" href="https://www.google.com/maps/dir/?api=1&destination=10+Rue+Pierre+Demours+75017+Paris" target="_blank" rel="noopener">Itinéraire</a>
     </div>
+    <p class="today" id="today">Ouvert du mardi au samedi.</p>
   </div>
+  <figure style="margin:0">
+    <div class="hero-pic"><img src="https://images.unsplash.com/photo-1529953717281-81a40b131119?w=1400&q=80&auto=format&fit=crop" alt="Établi de cordonnier : outils et botte en cuir"></div>
+  </figure>
 </section>
 
-<div class="ribbon" aria-hidden="true"><div class="ribbon-track">
-  <span>Talons<i></i>Patins<i></i>Ressemelage<i></i>Coutures<i></i>Clés plates<i></i>Clés de sécurité<i></i>Badges d’immeuble<i></i>Télécommandes<i></i>Gravure<i></i></span>
-  <span>Talons<i></i>Patins<i></i>Ressemelage<i></i>Coutures<i></i>Clés plates<i></i>Clés de sécurité<i></i>Badges d’immeuble<i></i>Télécommandes<i></i>Gravure<i></i></span>
-</div></div>
-
-<section class="s" id="metiers">
+<section class="services" id="savoir-faire">
   <div class="wrap">
-    <div class="head">
-      <div><div class="kicker" style="color:var(--oxblood)">Les métiers de la maison</div><h2>Trois savoir-faire, <em>un seul comptoir.</em></h2></div>
-      <p>Vous entrez avec une paire usée, une clé unique ou un badge qui ne suffit plus. Vous ressortez avec une solution, et le prix annoncé avant.</p>
+    <div class="intro">
+      <div><div class="label">Savoir-faire</div><h2>Trois métiers, un même comptoir.</h2></div>
+      <p>On entre avec un talon usé, une clé unique ou un badge qui ne suffit plus. On ressort avec une réponse claire, sans rendez-vous.</p>
     </div>
-    <div class="tickets">
-      <article class="ticket">
-        <div class="pic"><img src="https://images.unsplash.com/photo-1477517787936-70ba786643fd?w=900&q=75&auto=format&fit=crop" alt="Mains d’artisan travaillant une semelle" loading="lazy"></div>
-        <div class="body">
-          <div class="no"><span>Ticket N° 01</span><span>Cordonnerie</span></div>
-          <h3>Remettre sur pied</h3>
-          <ul><li>Talons et patins<small>sur place</small></li><li>Ressemelage</li><li>Recollage et coutures</li><li>Bottes et cuirs abîmés</li></ul>
-        </div>
+    <div class="cols">
+      <article class="col">
+        <div class="pic"><img src="https://images.unsplash.com/photo-1477517787936-70ba786643fd?w=900&q=78&auto=format&fit=crop" alt="Mains d’artisan travaillant une semelle" loading="lazy"></div>
+        <div class="num">I</div>
+        <h3>Cordonnerie</h3>
+        <p>Des chaussures que l’on croyait perdues, remises en état avec soin.</p>
+        <ul><li>Talons et patins</li><li>Ressemelage et recollage</li><li>Coutures, bottes et cuirs</li></ul>
       </article>
-      <article class="ticket">
-        <div class="pic"><img src="https://images.unsplash.com/photo-1643804926339-e94f0a655185?w=900&q=75&auto=format&fit=crop" alt="Trousseau de clés sur une table en bois" loading="lazy"></div>
-        <div class="body">
-          <div class="no"><span>Ticket N° 02</span><span>Clés & badges</span></div>
-          <h3>Ouvrir toutes les portes</h3>
-          <ul><li>Clés plates<small>minute</small></li><li>Clés de sécurité</li><li>Clés de voiture et télécommandes</li><li>Badges et bips d’immeuble</li></ul>
-        </div>
+      <article class="col">
+        <div class="pic"><img src="https://images.unsplash.com/photo-1643804926339-e94f0a655185?w=900&q=78&auto=format&fit=crop" alt="Trousseau de clés posé sur du bois" loading="lazy"></div>
+        <div class="num">II</div>
+        <h3>Clés et badges</h3>
+        <p>Une copie faite sur place, à partir de l’original.</p>
+        <ul><li>Clés plates et de sécurité</li><li>Clés de voiture et télécommandes</li><li>Badges et bips d’immeuble</li></ul>
       </article>
-      <article class="ticket">
-        <div class="pic"><img src="https://images.unsplash.com/photo-1577467013350-7c22a844e1a9?w=900&q=75&auto=format&fit=crop" alt="Brosses et cire pour l’entretien du cuir" loading="lazy"></div>
-        <div class="body">
-          <div class="no"><span>Ticket N° 03</span><span>Gravure & soin</span></div>
-          <h3>Signer et entretenir</h3>
-          <ul><li>Plaques de boîte aux lettres</li><li>Plaques d’interphone et de porte</li><li>Cirages, semelles, lacets</li><li>Photocopies</li></ul>
-        </div>
+      <article class="col">
+        <div class="pic"><img src="https://images.unsplash.com/photo-1577467013350-7c22a844e1a9?w=900&q=78&auto=format&fit=crop" alt="Brosses et cire pour l’entretien du cuir" loading="lazy"></div>
+        <div class="num">III</div>
+        <h3>Gravure et entretien</h3>
+        <p>Les petites choses qui font une porte, une boîte aux lettres, une paire bien tenue.</p>
+        <ul><li>Plaques de boîte aux lettres et d’interphone</li><li>Cirages, semelles et lacets</li><li>Photocopies</li></ul>
       </article>
     </div>
   </div>
 </section>
 
-<section class="split" id="atelier">
-  <div class="photo" role="img" aria-label="Paire de bottes en cuir usées sur des pavés"></div>
-  <div class="txt">
-    <div class="kicker">L’atelier</div>
-    <h2>Ces bottes-là, vous alliez <em>les jeter ?</em></h2>
-    <p>Talon usé jusqu’au clou, semelle qui bâille, couture lâchée : ce n’est pas la fin d’une paire, c’est un passage chez le cordonnier. Apportez-les, on regarde avec vous ce qui peut être sauvé.</p>
-    <blockquote class="quote">« Il a fait des miracles sur des chaussures que je pensais fichues. »<footer>Avis Google</footer></blockquote>
-  </div>
-</section>
+<figure class="quote" style="margin:0">
+  <img src="https://images.unsplash.com/photo-1511283402428-355853756676?w=2000&q=78&auto=format&fit=crop" alt="Paire de bottes en cuir usées" loading="lazy">
+  <figcaption><div class="wrap">
+    <blockquote>« Il a fait des miracles sur des chaussures que je pensais fichues. »</blockquote>
+    <cite>Avis client, Google</cite>
+  </div></figcaption>
+</figure>
 
-<section class="s">
-  <div class="wrap">
-    <div class="head">
-      <div><div class="kicker" style="color:var(--oxblood)">Comment ça se passe</div><h2>Sans rendez-vous. <em>Sans surprise.</em></h2></div>
-    </div>
-    <div class="steps">
-      <div class="step"><div class="n">i.</div><h3>Vous passez au comptoir</h3><p>Aux heures d’ouverture, avec la paire, la clé ou le badge.</p></div>
-      <div class="step"><div class="n">ii.</div><h3>On vous annonce le prix</h3><p>Avant de toucher à quoi que ce soit.</p></div>
-      <div class="step"><div class="n">iii.</div><h3>Vous repartez</h3><p>Tout de suite pour une clé, au délai convenu pour une réparation.</p></div>
-    </div>
-    <div class="proof" style="margin-top:80px">
-      <div class="score">4,7<small>Note Google · 15 avis</small></div>
-      <div>
-        <blockquote>« Très rapide, d’une grande précision et toujours prêt à rendre service. »</blockquote>
-        <blockquote>« Excellents services et accueil très chaleureux. »</blockquote>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="s visit" id="visite">
+<section class="visit" id="visite">
   <div class="wrap grid">
+    <div class="place">
+      <div class="label">Nous trouver</div>
+      <p class="addr">10 rue Pierre Demours<br>75017 Paris</p>
+      <p class="sub">À deux pas de l’avenue des Ternes. Sans rendez-vous.</p>
+      <div class="facts">
+        <div><span>Métro</span>Ternes, ligne 2</div>
+        <div><span>Téléphone</span><a href="tel:+33767755401">07 67 75 54 01</a></div>
+        <div><span>Jours fériés</span>Fermé</div>
+      </div>
+      <div class="actions">
+        <a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=10+Rue+Pierre+Demours+75017+Paris" target="_blank" rel="noopener">Itinéraire</a>
+        <a class="link" href="tel:+33767755401">Appeler</a>
+      </div>
+      <div class="rating"><b>4,7</b><span>sur 5 · 15 avis Google</span></div>
+    </div>
     <div>
-      <div class="kicker">Horaires</div>
-      <h2>Ouvert du mardi <em>au samedi.</em></h2>
+      <div class="label" style="margin-bottom:22px">Horaires</div>
       <table class="hours" id="hours">
         <tr data-d="2"><td>Mardi</td><td>9 h 30 – 13 h 30 · 15 h 30 – 18 h 50</td></tr>
         <tr data-d="3"><td>Mercredi</td><td>9 h 30 – 13 h 30 · 15 h 30 – 18 h 50</td></tr>
         <tr data-d="4"><td>Jeudi</td><td>9 h 30 – 13 h 30 · 15 h 30 – 18 h 50</td></tr>
         <tr data-d="5"><td>Vendredi</td><td>9 h 30 – 13 h 30 · 15 h 30 – 18 h 50</td></tr>
-        <tr data-d="6"><td>Samedi</td><td>9 h 30 – 18 h 50 · sans coupure</td></tr>
-        <tr data-d="0" class="off"><td>Dimanche</td><td>Fermé</td></tr>
-        <tr data-d="1" class="off"><td>Lundi</td><td>Fermé</td></tr>
+        <tr data-d="6"><td>Samedi</td><td>9 h 30 – 18 h 50</td></tr>
+        <tr data-d="0" class="closed"><td>Dimanche</td><td>Fermé</td></tr>
+        <tr data-d="1" class="closed"><td>Lundi</td><td>Fermé</td></tr>
       </table>
-    </div>
-    <div class="card">
-      <div class="kicker" style="margin-bottom:18px">Nous trouver</div>
-      <p class="addr">10 rue Pierre Demours<br>75017 Paris</p>
-      <p>À deux pas de l’avenue des Ternes.</p>
-      <div class="row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="15" rx="4"/><path d="M5 12h14M9 21l-2 0M15 21h2M8.5 15h.01M15.5 15h.01"/></svg><span>Métro Ternes (ligne 2)</span></div>
-      <div class="row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 3.5h3l1.5 4.5-2 1.3a11.5 11.5 0 0 0 5.7 5.7l1.3-2 4.5 1.5v3a2 2 0 0 1-2 2A16.5 16.5 0 0 1 4.5 5.5a2 2 0 0 1 2-2z"/></svg><span>07 67 75 54 01</span></div>
-      <div class="row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg><span>Fermé les jours fériés</span></div>
-      <div class="ctas">
-        <a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=10+Rue+Pierre+Demours+75017+Paris" target="_blank" rel="noopener">Itinéraire</a>
-        <a class="btn line" href="tel:+33767755401">Appeler</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="s" id="questions">
-  <div class="wrap">
-    <div class="head"><div><div class="kicker" style="color:var(--oxblood)">Avant de passer</div><h2>Les questions <em>qu’on nous pose.</em></h2></div></div>
-    <div class="faq">
-      <details><summary>Faut-il prendre rendez-vous ?</summary><p>Non. Passez directement au comptoir aux heures d’ouverture.</p></details>
-      <details><summary>Combien coûte une réparation ?</summary><p>Cela dépend de la chaussure et du travail. On regarde avec vous et on vous annonce le prix avant de commencer.</p></details>
-      <details><summary>Mon badge d’immeuble peut-il être copié ?</summary><p>Apportez-le : on vérifie sur place s’il peut être reproduit.</p></details>
-      <details><summary>Et une clé de voiture ou une télécommande ?</summary><p>Apportez la clé d’origine : on vous dit sur place ce qui est possible et à quel prix.</p></details>
     </div>
   </div>
 </section>
@@ -322,31 +218,30 @@ h2 em{font-style:italic;color:var(--oxblood)}
 
 <footer class="ft">
   <div class="wrap">
-    <a class="brand" href="#top"><span><span class="brand-name"><span>LE</span> Cordouanier</span><span class="brand-sub">10 rue Pierre Demours · Paris 17e</span></span></a>
-    <span>Proposition de site non officielle, réalisée par Jean Cazals · Photos Unsplash</span>
+    <a class="mark" href="#top"><b>Le Cordouanier</b></a>
+    <span>Proposition non officielle réalisée par Jean Cazals · Photographies Unsplash</span>
   </div>
 </footer>
 
-<div class="callbar"><a class="btn" href="tel:+33767755401">Appeler</a><a class="btn line" href="https://www.google.com/maps/dir/?api=1&destination=10+Rue+Pierre+Demours+75017+Paris" target="_blank" rel="noopener">Y aller</a></div>
+<div class="callbar"><a href="tel:+33767755401">Appeler</a><a href="https://www.google.com/maps/dir/?api=1&destination=10+Rue+Pierre+Demours+75017+Paris" target="_blank" rel="noopener">Itinéraire</a></div>
 
 <script>
-/* Shop-door sign: open or closed right now, in Paris time. Times in minutes since midnight. */
+/* Today's opening, in Paris time, written as a plain sentence. Times in minutes since midnight. */
 (function(){
   var H={2:[[570,810],[930,1130]],3:[[570,810],[930,1130]],4:[[570,810],[930,1130]],5:[[570,810],[930,1130]],6:[[570,1130]]};
+  var days=['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
   var parts=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Paris',weekday:'short',hour:'2-digit',minute:'2-digit',hour12:false}).formatToParts(new Date());
   var get=function(t){return (parts.find(function(p){return p.type===t;})||{}).value;};
   var day=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(get('weekday'));
   var now=(+get('hour')%24)*60+(+get('minute'));
   var fmt=function(m){return Math.floor(m/60)+' h '+String(m%60).padStart(2,'0');};
-  var row=document.querySelector('#hours tr[data-d="'+day+'"]');if(row)row.classList.add('today');
-  var sign=document.getElementById('sign'),a=document.getElementById('sign-a'),b=document.getElementById('sign-b');
-  var slots=H[day]||[];
+  var row=document.querySelector('#hours tr[data-d="'+day+'"]');if(row)row.classList.add('is-today');
+  var el=document.getElementById('today'),slots=H[day]||[];
   for(var i=0;i<slots.length;i++){
-    if(now>=slots[i][0]&&now<slots[i][1]){a.textContent='Ouvert';b.textContent='jusqu’à '+fmt(slots[i][1]);return;}
-    if(now<slots[i][0]){sign.className='sign closed';a.textContent='Fermé';b.textContent='ouvre à '+fmt(slots[i][0]);return;}
+    if(now>=slots[i][0]&&now<slots[i][1]){el.innerHTML='<strong>Ouvert</strong> aujourd’hui jusqu’à '+fmt(slots[i][1])+'.';return;}
+    if(now<slots[i][0]){el.innerHTML='<strong>Fermé</strong> pour le moment · ouvre à '+fmt(slots[i][0])+'.';return;}
   }
-  sign.className='sign closed';a.textContent='Fermé';
-  for(var d=1;d<=7;d++){var n=(day+d)%7;if(H[n]){b.textContent='réouvre '+['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'][n]+' à '+fmt(H[n][0][0]);break;}}
+  for(var d=1;d<=7;d++){var n=(day+d)%7;if(H[n]){el.innerHTML='<strong>Fermé</strong> · réouverture '+days[n]+' à '+fmt(H[n][0][0])+'.';break;}}
 })();
 </script>
 </body>
