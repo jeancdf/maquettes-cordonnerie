@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Di Mascio — Patine et soin du cuir, Paris 17e (proposition de site)</title>
-<meta name="description" content="Laurent Di Mascio, 20 rue Saint-Ferdinand, Paris 17e. Entretien des chaussures à la main, patines sur mesure et vente de souliers en cuir.">
+<title>Laurent di Mascio — Glaçage et patine, Paris 17e (proposition de site)</title>
+<meta name="description" content="Laurent Di Mascio, 20 rue Saint-Ferdinand, Paris 17e. Glaçage, patine et entretien des chaussures à la main, souliers homme et femme, ceintures patinées. Tél. 06 63 34 23 50.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Golos+Text:wght@400;500;600&display=swap">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23101d38'/%3E%3Crect x='6' y='22' width='20' height='3' fill='%23e8702f'/%3E%3Ctext x='16' y='19' text-anchor='middle' font-family='Georgia' font-size='15' fill='%23f4efe7'%3EDM%3C/text%3E%3C/svg%3E">
@@ -116,6 +116,17 @@ h2{font:400 clamp(34px,3.8vw,52px)/1.08 var(--serif);letter-spacing:-.01em;margi
 .ft .mark b{color:var(--on-dark);font-size:22px}
 .ft .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center}
 .callbar{display:none}
+.price{display:block;margin-top:14px;font:600 15px/1 var(--sans);color:#c94a06;font-variant-numeric:tabular-nums}
+.quote{margin:36px 0 0;padding:22px 0 0;border-top:1px solid var(--line)}
+.quote p{margin:0 0 8px;font:400 21px/1.4 var(--serif)}
+.quote cite{font-style:normal;font-size:13.5px;color:var(--muted)}
+.gift{display:grid;grid-template-columns:5fr 6fr;gap:72px;align-items:center;margin-top:64px;padding:40px 44px;background:var(--navy);color:var(--on-dark);border-left:4px solid var(--orange)}
+.gift h3{margin:12px 0 0;font:400 30px/1.15 var(--serif)}
+.gift p{margin:0 0 14px;color:var(--on-dark-muted)}
+.gift ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.gift li{font-size:14px;padding:6px 12px;border:1px solid rgba(244,239,231,.25)}
+.front{margin:44px 0 0;aspect-ratio:4/5;max-width:420px;overflow:hidden;background:var(--bg-2)}
+figcaption{font-size:13px;color:var(--muted);margin-top:10px}
 
 @media (max-width:900px){
   .hd .wrap{height:72px}
@@ -135,8 +146,9 @@ h2{font:400 clamp(34px,3.8vw,52px)/1.08 var(--serif);letter-spacing:-.01em;margi
   .vente-pic{min-height:300px}
   .vente-txt{padding:56px 24px 64px}
   .addr{font-size:30px}
+  .gift{grid-template-columns:1fr;gap:20px;padding:30px 24px}
   .ft{padding-bottom:110px}
-  .callbar{display:block;position:fixed;left:0;right:0;bottom:0;z-index:10;background:var(--navy);border-top:3px solid var(--orange);padding:10px 12px calc(10px + env(safe-area-inset-bottom))}
+  .callbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:10;background:var(--navy);border-top:3px solid var(--orange);padding:10px 12px calc(10px + env(safe-area-inset-bottom))}
   .callbar a{display:flex;align-items:center;justify-content:center;min-height:48px;font-size:15px;font-weight:600;text-decoration:none;background:var(--orange);color:var(--navy-3)}
 }
 </style>
@@ -146,8 +158,8 @@ h2{font:400 clamp(34px,3.8vw,52px)/1.08 var(--serif);letter-spacing:-.01em;margi
 
 <header class="hd">
   <div class="wrap">
-    <a class="mark" href="#top"><b>Di Mascio</b><small>Paris 17<sup>e</sup></small></a>
-    <nav aria-label="Navigation"><a href="#patine">Patine</a><a href="#soin">Entretien</a><a href="#vente">Souliers</a><a href="#visite">Horaires et accès</a></nav>
+    <a class="mark" href="#top"><b>Di Mascio</b><small>Glaçage &amp; patine</small></a>
+    <nav aria-label="Navigation"><a href="#patine">Patine</a><a href="#soin">Entretien</a><a href="#vente">Souliers</a><a href="#visite">Horaires et accès</a><a href="tel:+33663342350" style="color:var(--on-dark)">06 63 34 23 50</a></nav>
   </div>
 </header>
 
@@ -155,17 +167,17 @@ h2{font:400 clamp(34px,3.8vw,52px)/1.08 var(--serif);letter-spacing:-.01em;margi
 <section class="hero">
   <div class="wrap">
     <div>
-      <div class="label">20 rue Saint-Ferdinand</div>
+      <div class="label">Glaçage &amp; patine · 20 rue Saint-Ferdinand</div>
       <h1>Le cuir, travaillé <em>à la main.</em></h1>
-      <p class="lede">Entretien des chaussures à la main, patines sur mesure et souliers en cuir à la vente. Laurent Di Mascio prend le temps de chaque paire, dans sa boutique à deux pas de la porte Maillot.</p>
+      <p class="lede">Glaçages, patines sur mesure et entretien des chaussures à la main. Souliers homme et femme, ceintures patinées assorties. Laurent di Mascio prend le temps de chaque paire, dans sa boutique à deux pas de la porte Maillot.</p>
       <div class="actions">
         <a class="btn" href="#patine">Faire patiner une paire</a>
-        <a class="link" href="#visite">Horaires et accès</a>
+        <a class="link" href="tel:+33663342350">06 63 34 23 50</a>
       </div>
       <p class="today" id="today">Ouvert du mardi au samedi.</p>
     </div>
     <figure style="margin:0">
-      <div class="hero-pic"><img src="https://images.unsplash.com/photo-1664505504065-31f8937d2261?w=1200&q=80&auto=format&fit=crop" alt="Derby en cuir cognac à la patine unie, lustrée à la main"></div>
+      <div class="hero-pic"><img src="img/vitrine.jpg" alt="La vitrine de la boutique : mocassins et richelieus patinés, maquette de Riva, portraits en noir et blanc"></div>
     </figure>
   </div>
 </section>
@@ -175,19 +187,20 @@ h2{font:400 clamp(34px,3.8vw,52px)/1.08 var(--serif);letter-spacing:-.01em;margi
     <div>
       <div class="label">La patine sur mesure</div>
       <h2>Une couleur qui n’existe que sur vos chaussures.</h2>
-      <p class="intro">La patine se monte à la main, couche après couche, jusqu’à la nuance voulue. Raviver un cuir fatigué, foncer une pointe, changer complètement de teinte : tout se décide avec vous, au comptoir.</p>
+      <p class="intro">La patine se monte à la main, couche après couche, jusqu’à la nuance voulue. Raviver un cuir fatigué, foncer une pointe, changer complètement de teinte : tout se décide avec vous, au comptoir. À partir de 64 €.</p>
       <ol class="steps">
         <li><b>1</b><h3>On choisit ensemble</h3><p>La teinte, l’intensité, les dégradés. Vous apportez une idée, une photo, ou rien du tout.</p></li>
         <li><b>2</b><h3>Le cuir est préparé</h3><p>Nettoyé et dégraissé pour que la couleur prenne en profondeur.</p></li>
         <li><b>3</b><h3>Couche après couche</h3><p>Teinture posée à la main, au pinceau et au chiffon, puis nourrie.</p></li>
         <li><b>4</b><h3>La finition</h3><p>Cirage et glaçage, mat ou miroir, selon votre goût.</p></li>
       </ol>
+      <blockquote class="quote"><p>« Excellent chausseur, bottier, et des patines de toute beauté. »</p><cite>Avis Google · 4,3 sur 5, 18 avis</cite></blockquote>
     </div>
     <div class="duo">
-      <div><img src="https://images.unsplash.com/photo-1616696038562-574c18066055?w=1000&q=78&auto=format&fit=crop" alt="Paire de derbies en cuir orangé" loading="lazy"></div>
+      <div><img src="img/atelier.jpg" alt="Laurent di Mascio en tablier, une chaussure à la main, dans son atelier" loading="lazy"></div>
       <div>
         <div><img src="https://images.unsplash.com/photo-1563433337461-5b65f0834f3a?w=700&q=78&auto=format&fit=crop" alt="Gros plan sur le grain d’un cuir brun" loading="lazy"></div>
-        <div><img src="https://images.unsplash.com/photo-1641893843833-a006778dc00b?w=700&q=78&auto=format&fit=crop" alt="Richelieus en cuir prune" loading="lazy"></div>
+        <div><img src="img/bottes.jpg" alt="Bottes cavalières et souliers en cuir brun exposés en boutique" loading="lazy"></div>
       </div>
     </div>
   </div>
@@ -197,30 +210,38 @@ h2{font:400 clamp(34px,3.8vw,52px)/1.08 var(--serif);letter-spacing:-.01em;margi
   <div class="wrap">
     <div class="head">
       <div><div class="label">L’entretien à la main</div><h2>Le soin que vos chaussures méritent.</h2></div>
-      <p>Pas de machine : chaque paire est brossée, nourrie et cirée à la main. Le prix est annoncé avant de commencer.</p>
+      <p>Pas de machine : chaque paire est brossée, nourrie et cirée à la main. Les tarifs sont affichés en vitrine, et annoncés avant de commencer.</p>
     </div>
     <div class="cards">
-      <article class="card"><h3>Soin complet</h3><p>Nettoyage, crème nourrissante, cirage : la paire repart comme au premier jour.</p></article>
-      <article class="card"><h3>Glaçage</h3><p>Le brillant miroir sur la pointe et le talon, monté à la cire et à l’eau.</p></article>
-      <article class="card"><h3>Remise en couleur</h3><p>Rayures, éraflures, cuir délavé : la teinte est reprise à la main.</p></article>
-      <article class="card"><h3>Daim et nubuck</h3><p>Nettoyage en douceur et redressage du velours.</p></article>
-      <article class="card"><h3>Imperméabilisation</h3><p>Une protection avant l’hiver parisien, sans changer l’aspect du cuir.</p></article>
-      <article class="card"><h3>Bottes et sacs</h3><p>Le même soin pour les grandes pièces de cuir.</p></article>
+      <article class="card"><h3>Nettoyage</h3><p>Nettoyage, crème nourrissante, cirage : la paire repart comme au premier jour.</p><span class="price">20 €</span></article>
+      <article class="card"><h3>Glaçage</h3><p>Le brillant miroir sur la pointe et le talon, monté à la cire et à l’eau.</p><span class="price">25 €</span></article>
+      <article class="card"><h3>Nettoyage daim</h3><p>Nettoyage en douceur et redressage du velours, pour le daim et le nubuck.</p><span class="price">37 €</span></article>
+      <article class="card"><h3>Patine</h3><p>Couleur montée à la main, unie ou en dégradé, jusqu’à la nuance voulue.</p><span class="price">à partir de 64 €</span></article>
+      <article class="card"><h3>Remise en couleur</h3><p>Rayures, éraflures, cuir délavé : la teinte est reprise à la main.</p><span class="price">sur devis</span></article>
+      <article class="card"><h3>Bottes et ceintures</h3><p>Le même soin pour les grandes pièces de cuir.</p><span class="price">sur devis</span></article>
     </div>
-    <p class="soin-note">Sans rendez-vous, aux heures d’ouverture.</p>
+    <p class="soin-note">Cirages et glaçages sans rendez-vous, aux heures d’ouverture.</p>
+    <div class="gift">
+      <div><div class="label">À offrir</div><h3>L’enveloppe cadeau</h3></div>
+      <div>
+        <p>Une enveloppe du montant de votre choix, à utiliser en boutique :</p>
+        <ul><li>Un nettoyage cirage</li><li>Un nettoyage daim</li><li>Un glaçage</li><li>Une patine</li><li>Une paire de chaussures</li><li>Une ceinture patinée assortie</li></ul>
+      </div>
+    </div>
   </div>
 </section>
 
 <section class="vente" id="vente">
   <div class="wrap">
-    <div class="vente-pic"><img src="https://images.unsplash.com/photo-1777987601431-8d27d2039cc4?w=1200&q=78&auto=format&fit=crop" alt="Richelieus en cuir brun sur une surface en bois" loading="lazy"></div>
+    <div class="vente-pic"><img src="img/boutique.jpg" alt="L’intérieur de la boutique : étagères de souliers, Laurent di Mascio au travail au fond" loading="lazy"></div>
     <div class="vente-txt">
-      <div class="label">Nouveau en boutique</div>
-      <h2>Des souliers en cuir, à la vente.</h2>
-      <p>Une sélection de chaussures en cuir, choisies pour durer. Et parce qu’elles sortent de chez un spécialiste de la patine, elles peuvent être personnalisées dès l’achat.</p>
+      <div class="label">En boutique</div>
+      <h2>Souliers homme et femme.</h2>
+      <p>Une sélection de chaussures en cuir, choisies pour durer. Et parce qu’elles sortent de chez un spécialiste de la patine, elles peuvent être personnalisées dès l’achat, ceinture assortie comprise.</p>
       <ul>
-        <li>Souliers de ville en cuir</li>
-        <li>Conseil sur la taille et l’entretien</li>
+        <li>Ligne homme : mocassins, derbies, richelieus, bottes</li>
+        <li>Collection femme : ballerines, sandales, sacs</li>
+        <li>Ceintures patinées, assorties à vos chaussures</li>
         <li>Patine personnalisée à l’achat</li>
       </ul>
       <a class="btn" href="#visite">Venir les essayer</a>
@@ -236,24 +257,28 @@ h2{font:400 clamp(34px,3.8vw,52px)/1.08 var(--serif);letter-spacing:-.01em;margi
       <p class="sub">Entre l’avenue des Ternes et l’avenue de la Grande-Armée.</p>
       <div class="facts">
         <div><span>Métro</span>Argentine, ligne 1</div>
-        <div><span>Téléphone</span><em>[à compléter]</em></div>
-        <div><span>Rendez-vous</span>Inutile</div>
+        <div><span>Téléphone</span><a href="tel:+33663342350">06 63 34 23 50</a></div>
+        <div><span>Rendez-vous</span>Inutile pour cirages et glaçages</div>
+        <div><span>Avis Google</span>4,3 sur 5 · 18 avis</div>
       </div>
       <div class="actions">
-        <a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=20+Rue+Saint-Ferdinand+75017+Paris" target="_blank" rel="noopener">Itinéraire</a>
+        <a class="btn" href="tel:+33663342350">Appeler</a>
+        <a class="link" href="https://www.google.com/maps/dir/?api=1&destination=20+Rue+Saint-Ferdinand+75017+Paris" target="_blank" rel="noopener">Itinéraire</a>
       </div>
+      <figure style="margin:0"><div class="front"><img src="img/devanture.jpg" alt="La devanture bleu marine et orange : Laurent di Mascio, Glaçage et Patine" loading="lazy"></div><figcaption>La devanture, 20 rue Saint-Ferdinand.</figcaption></figure>
     </div>
     <div>
       <div class="label" style="margin-bottom:22px">Horaires</div>
       <table class="hours" id="hours">
-        <tr data-d="2"><td>Mardi</td><td>11 h 30 – 14 h · 15 h – 20 h</td></tr>
-        <tr data-d="3"><td>Mercredi</td><td>11 h 30 – 14 h · 15 h – 20 h</td></tr>
-        <tr data-d="4"><td>Jeudi</td><td>11 h 30 – 14 h · 15 h – 20 h</td></tr>
-        <tr data-d="5"><td>Vendredi</td><td>11 h 30 – 14 h · 15 h – 20 h</td></tr>
-        <tr data-d="6"><td>Samedi</td><td>11 h 30 – 14 h · 15 h – 20 h</td></tr>
+        <tr data-d="2"><td>Mardi</td><td>11 h – 14 h · 15 h – 20 h</td></tr>
+        <tr data-d="3"><td>Mercredi</td><td>11 h – 14 h · 15 h – 20 h</td></tr>
+        <tr data-d="4"><td>Jeudi</td><td>11 h – 14 h · 15 h – 20 h</td></tr>
+        <tr data-d="5"><td>Vendredi</td><td>11 h – 14 h · 15 h – 20 h</td></tr>
+        <tr data-d="6"><td>Samedi</td><td>11 h – 14 h · 15 h – 20 h</td></tr>
         <tr data-d="0" class="closed"><td>Dimanche</td><td>Fermé</td></tr>
         <tr data-d="1" class="closed"><td>Lundi</td><td>Fermé</td></tr>
       </table>
+      <p class="soin-note">En cas d’absence : <a href="tel:+33663342350">06 63 34 23 50</a>.</p>
     </div>
   </div>
 </section>
@@ -262,17 +287,17 @@ h2{font:400 clamp(34px,3.8vw,52px)/1.08 var(--serif);letter-spacing:-.01em;margi
 <footer class="ft">
   <div class="wrap">
     <a class="mark" href="#top"><b>Di Mascio</b></a>
-    <span style="color:#c3cadb">20 rue Saint-Ferdinand · 75017 Paris</span>
-    <span>Proposition non officielle réalisée par Jean Cazals · Photographies Unsplash</span>
+    <span style="color:#c3cadb">20 rue Saint-Ferdinand · 75017 Paris · <a href="tel:+33663342350">06 63 34 23 50</a></span>
+    <span>Proposition non officielle réalisée par Jean Cazals · Photographies Google Maps (clients) et Unsplash</span>
   </div>
 </footer>
 
-<div class="callbar"><a href="https://www.google.com/maps/dir/?api=1&destination=20+Rue+Saint-Ferdinand+75017+Paris" target="_blank" rel="noopener">Venir à la boutique</a></div>
+<div class="callbar"><a href="tel:+33663342350">Appeler</a><a href="https://www.google.com/maps/dir/?api=1&destination=20+Rue+Saint-Ferdinand+75017+Paris" target="_blank" rel="noopener" style="background:var(--navy-2);color:var(--on-dark)">Itinéraire</a></div>
 
 <script>
 /* Today's opening, in Paris time, written as a plain sentence. Times in minutes since midnight. */
 (function(){
-  var d=[[690,840],[900,1200]],H={2:d,3:d,4:d,5:d,6:d};
+  var d=[[660,840],[900,1200]],H={2:d,3:d,4:d,5:d,6:d};
   var days=['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
   var parts=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Paris',weekday:'short',hour:'2-digit',minute:'2-digit',hour12:false}).formatToParts(new Date());
   var get=function(t){return (parts.find(function(p){return p.type===t;})||{}).value;};
