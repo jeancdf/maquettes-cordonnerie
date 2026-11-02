@@ -12,7 +12,7 @@
 <style>
 :root{
   --bg:#f4efe7;--bg-2:#e8e0d3;--ink:#121a2c;--muted:#5d6475;--line:#d6cdbd;
-  --navy:#101d38;--navy-2:#18294d;--navy-3:#0a1328;--orange:#e8702f;--orange-2:#f0874d;
+  --navy:#101d38;--navy-2:#18294d;--navy-3:#0a1328;--orange:#c9946a;--orange-2:#d9a983;--rust:#9c5f38;
   --on-dark:#f4efe7;--on-dark-muted:#a9b2c6;
   --serif:'Gloock',Georgia,serif;--sans:'Golos Text',system-ui,sans-serif;
 }
@@ -26,7 +26,7 @@ a{color:inherit}
 .note a{color:var(--on-dark)}
 
 /* Header: navy band closed by a fluorescent rule, like the shop front */
-.hd{background:var(--navy);color:var(--on-dark);border-bottom:4px solid var(--orange)}
+.hd{background:var(--navy);color:var(--on-dark);border-bottom:1px solid rgba(201,148,106,.55)}
 .hd .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;height:84px}
 .mark{display:flex;align-items:baseline;gap:14px;text-decoration:none;line-height:1}
 .mark b{font:400 30px/1 var(--serif);letter-spacing:.01em}
@@ -38,30 +38,30 @@ a{color:inherit}
 /* Hero: dark, the shoe on black */
 .hero{background:var(--navy);color:var(--on-dark)}
 .hero .wrap{display:grid;grid-template-columns:6fr 5fr;gap:64px;align-items:center;padding-top:84px;padding-bottom:96px}
-.label{font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;font-weight:600;color:var(--orange)}
+.label{font-size:13px;letter-spacing:.2em;text-transform:uppercase;font-weight:500;color:var(--orange)}
 h1{font:400 clamp(44px,5.6vw,78px)/1.02 var(--serif);letter-spacing:-.015em;margin:24px 0 28px}
 h1 em{font-style:normal;color:var(--orange)}
 .lede{max-width:30em;color:var(--on-dark-muted);margin:0 0 40px}
 .actions{display:flex;flex-wrap:wrap;align-items:center;gap:28px}
-.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 30px;background:var(--orange);color:var(--navy-3);text-decoration:none;font-size:15px;font-weight:600;letter-spacing:.02em;transition:background .2s}
-.btn:hover{background:var(--orange-2)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 30px;background:transparent;border:1px solid var(--orange);color:var(--on-dark);text-decoration:none;font-size:15px;font-weight:500;letter-spacing:.03em;transition:background .2s,color .2s}
+.btn:hover{background:var(--orange);color:var(--navy-3)}
 .link{font-size:15px;font-weight:500;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:3px}
 .link:hover{color:var(--orange)}
 .today{font-size:14.5px;color:var(--on-dark-muted);margin:36px 0 0;padding-top:20px;border-top:1px solid rgba(244,239,231,.14)}
 .today strong{color:var(--on-dark);font-weight:600}
 .hero-pic{position:relative;aspect-ratio:4/5;background:var(--navy-3)}
-.hero-pic::before{content:"";position:absolute;left:-14px;bottom:-14px;width:46%;height:46%;background:var(--orange);z-index:0}
+.hero-pic::before{content:"";position:absolute;left:-16px;bottom:-16px;width:100%;height:100%;border:1px solid var(--orange);z-index:0}
 .hero-pic img{position:relative;z-index:1}
 
 /* Patine: the centrepiece */
 .patine{padding:112px 0}
 .patine .grid{display:grid;grid-template-columns:5fr 6fr;gap:72px;align-items:center}
 h2{font:400 clamp(34px,3.8vw,52px)/1.08 var(--serif);letter-spacing:-.01em;margin:20px 0 22px}
-.patine .label,.soin .label{color:#c94a06}
+.patine .label,.soin .label{color:var(--rust)}
 .patine p.intro{color:var(--muted);margin:0 0 36px;max-width:32em}
 .steps{list-style:none;margin:0;padding:0;border-top:1px solid var(--ink)}
 .steps li{display:grid;grid-template-columns:56px 1fr;gap:4px 8px;padding:20px 0;border-bottom:1px solid var(--line)}
-.steps b{grid-row:span 2;font:400 26px/1.1 var(--serif);color:#c94a06}
+.steps b{grid-row:span 2;font:400 26px/1.1 var(--serif);color:var(--rust)}
 .steps h3{margin:0;font:600 17px/1.4 var(--sans)}
 .steps p{margin:0;color:var(--muted);font-size:15px;line-height:1.55}
 .duo{display:grid;grid-template-columns:3fr 2fr;gap:14px;height:560px}
@@ -91,13 +91,13 @@ h2{font:400 clamp(34px,3.8vw,52px)/1.08 var(--serif);letter-spacing:-.01em;margi
 .vente-txt p{color:var(--on-dark-muted);margin:0 0 30px;max-width:30em}
 .vente ul{list-style:none;margin:0 0 36px;padding:0;border-top:1px solid rgba(244,239,231,.18)}
 .vente li{padding:14px 0;border-bottom:1px solid rgba(244,239,231,.18);font-size:15.5px}
-.vente li::before{content:"";display:inline-block;width:14px;height:3px;background:var(--orange);vertical-align:middle;margin-right:14px}
+.vente li::before{content:"";display:inline-block;width:14px;height:1px;background:var(--orange);vertical-align:middle;margin-right:14px}
 
 /* Visit */
 .visit{padding:108px 0}
 .visit .grid{display:grid;grid-template-columns:5fr 6fr;gap:72px}
-.visit .label{color:#c94a06}
-.visit .btn{background:var(--navy);color:var(--on-dark)}
+.visit .label{color:var(--rust)}
+.visit .btn{background:var(--navy);border-color:var(--navy);color:var(--on-dark)}
 .visit .btn:hover{background:var(--navy-2)}
 .hours{width:100%;border-collapse:collapse;margin-top:8px}
 .hours td{padding:15px 0;border-bottom:1px solid var(--line);font-size:15.5px}
@@ -112,15 +112,15 @@ h2{font:400 clamp(34px,3.8vw,52px)/1.08 var(--serif);letter-spacing:-.01em;margi
 .facts div{display:flex;justify-content:space-between;gap:20px;padding:15px 0;border-bottom:1px solid var(--line);font-size:15.5px}
 .facts span,.facts em{color:var(--muted);font-style:normal}
 
-.ft{background:var(--navy-3);color:#8d97ad;padding:40px 0 48px;font-size:13px;border-top:4px solid var(--orange)}
+.ft{background:var(--navy-3);color:#8d97ad;padding:40px 0 48px;font-size:13px;border-top:1px solid rgba(201,148,106,.55)}
 .ft .mark b{color:var(--on-dark);font-size:22px}
 .ft .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center}
 .callbar{display:none}
-.price{display:block;margin-top:14px;font:600 15px/1 var(--sans);color:#c94a06;font-variant-numeric:tabular-nums}
+.price{display:block;margin-top:14px;font:600 15px/1 var(--sans);color:var(--rust);font-variant-numeric:tabular-nums}
 .quote{margin:36px 0 0;padding:22px 0 0;border-top:1px solid var(--line)}
 .quote p{margin:0 0 8px;font:400 21px/1.4 var(--serif)}
 .quote cite{font-style:normal;font-size:13.5px;color:var(--muted)}
-.gift{display:grid;grid-template-columns:5fr 6fr;gap:72px;align-items:center;margin-top:64px;padding:40px 44px;background:var(--navy);color:var(--on-dark);border-left:4px solid var(--orange)}
+.gift{display:grid;grid-template-columns:5fr 6fr;gap:72px;align-items:center;margin-top:64px;padding:40px 44px;background:var(--navy);color:var(--on-dark);border-left:2px solid var(--orange)}
 .gift h3{margin:12px 0 0;font:400 30px/1.15 var(--serif)}
 .gift p{margin:0 0 14px;color:var(--on-dark-muted)}
 .gift ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
