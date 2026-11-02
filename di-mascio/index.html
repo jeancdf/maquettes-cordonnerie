@@ -34,6 +34,8 @@ a{color:inherit}
 .hd nav{display:flex;align-items:center;gap:32px;font-size:14px}
 .hd nav a{text-decoration:none;color:var(--on-dark-muted)}
 .hd nav a:hover{color:var(--on-dark)}
+.hd nav a.nav-tel{font-size:16px;font-weight:600;letter-spacing:.02em;color:var(--navy-3);background:var(--orange);padding:7px 14px;transition:background .2s}
+.hd nav a.nav-tel:hover{color:var(--navy-3);background:var(--orange-2)}
 
 /* Hero: dark, the shoe on black */
 .hero{background:var(--navy);color:var(--on-dark)}
@@ -202,7 +204,7 @@ figcaption{font-size:13px;color:var(--muted);margin-top:10px}
 <header class="hd">
   <div class="wrap">
     <a class="mark" href="#top"><b>Di Mascio</b><small>Glaçage &amp; patine</small></a>
-    <nav aria-label="Navigation"><a href="#patine">Patine</a><a href="#soin">Entretien</a><a href="#vente">Souliers</a><a href="#visite">Horaires et accès</a><a href="tel:+33663342350" style="color:var(--on-dark)">06 63 34 23 50</a></nav>
+    <nav aria-label="Navigation"><a href="#patine">Patine</a><a href="#soin">Entretien</a><a href="#vente">Souliers</a><a href="#visite">Horaires et accès</a><a class="nav-tel" href="tel:+33663342350">06 63 34 23 50</a></nav>
   </div>
 </header>
 
