@@ -126,11 +126,17 @@ h2{font:400 clamp(34px,3.8vw,52px)/1.08 var(--serif);letter-spacing:-.01em;margi
 .quote{margin:36px 0 0;padding:22px 0 0;border-top:1px solid var(--line)}
 .quote p{margin:0 0 8px;font:400 21px/1.4 var(--serif)}
 .quote cite{font-style:normal;font-size:13.5px;color:var(--muted)}
-.gift{display:grid;grid-template-columns:5fr 6fr;gap:72px;align-items:center;margin-top:64px;padding:40px 44px;background:var(--navy);color:var(--on-dark);border-left:2px solid var(--orange)}
-.gift h3{margin:12px 0 0;font:400 30px/1.15 var(--serif)}
-.gift p{margin:0 0 14px;color:var(--on-dark-muted)}
-.gift ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
-.gift li{font-size:14px;padding:6px 12px;border:1px solid rgba(244,239,231,.25)}
+/* Gift voucher: a present for someone else, explained in one sentence */
+.gift{display:grid;grid-template-columns:5fr 6fr;gap:72px;align-items:center;margin-top:64px;padding:56px 56px;background:var(--navy);color:var(--on-dark);border-left:2px solid var(--orange)}
+.gift .label{font-size:14px;color:var(--orange)}
+.gift h3{margin:14px 0 0;font:400 clamp(36px,4vw,54px)/1.05 var(--serif);letter-spacing:-.01em}
+.gift .big{margin:0 0 14px;font:400 26px/1.35 var(--serif)}
+.gift .small{display:flex;align-items:center;gap:10px;margin:0 0 30px;font-size:15px;color:var(--on-dark-muted)}
+.info{position:relative;display:inline-flex}
+.info button{width:24px;height:24px;border-radius:50%;border:1px solid var(--orange);background:none;color:var(--orange);font:600 13px/1 Georgia,serif;font-style:italic;cursor:pointer;padding:0}
+.info [role=tooltip]{position:absolute;left:50%;bottom:calc(100% + 12px);transform:translateX(-50%);width:260px;padding:16px 18px;background:var(--bg);color:var(--ink);font-size:14px;line-height:1.6;box-shadow:0 10px 30px rgba(0,0,0,.25);opacity:0;visibility:hidden;transition:opacity .15s;z-index:5}
+.info [role=tooltip] b{display:block;margin-bottom:4px;font-weight:600}
+.info:hover [role=tooltip],.info:focus-within [role=tooltip]{opacity:1;visibility:visible}
 .front{margin:44px 0 0;aspect-ratio:4/5;max-width:420px;overflow:hidden;background:var(--bg-2)}
 /* Reviews: the score, big, on its own navy panel */
 .reviews{display:grid;grid-template-columns:4fr 7fr;background:var(--navy);color:var(--on-dark);margin-bottom:88px;border-top:1px solid var(--orange)}
@@ -176,7 +182,9 @@ figcaption{font-size:13px;color:var(--muted);margin-top:10px}
   .vente-pic{min-height:300px}
   .vente-txt{padding:56px 24px 64px}
   .addr{font-size:30px}
-  .gift{grid-template-columns:1fr;gap:20px;padding:30px 24px}
+  .gift{grid-template-columns:1fr;gap:24px;padding:40px 24px}
+  .gift .big{font-size:22px}
+  .info [role=tooltip]{left:auto;right:-8px;transform:none}
   .reviews{grid-template-columns:1fr;margin-bottom:64px}
   .score{padding:36px 24px 32px;border-right:0;border-bottom:1px solid rgba(244,239,231,.12)}
   .score-num{font-size:92px}
@@ -258,10 +266,13 @@ figcaption{font-size:13px;color:var(--muted);margin-top:10px}
     </div>
     <p class="soin-note">Cirages et glaçages sans rendez-vous, aux heures d’ouverture.</p>
     <div class="gift">
-      <div><div class="label">À offrir</div><h3>L’enveloppe cadeau</h3></div>
+      <div><div class="label">Idée cadeau</div><h3>Offrez l’enveloppe cadeau.</h3></div>
       <div>
-        <p>Une enveloppe du montant de votre choix, à utiliser en boutique :</p>
-        <ul><li>Un nettoyage cirage</li><li>Un nettoyage daim</li><li>Un glaçage</li><li>Une patine</li><li>Une paire de chaussures</li><li>Une ceinture patinée assortie</li></ul>
+        <p class="big">Une enveloppe du montant de votre choix, à utiliser en boutique.</p>
+        <p class="small">Plusieurs services compris dedans.
+          <span class="info"><button type="button" aria-describedby="gift-list" aria-label="Voir les services compris">i</button>
+            <span role="tooltip" id="gift-list"><b>Au choix de la personne :</b>nettoyage cirage, nettoyage daim, glaçage, patine, une paire de chaussures, une ceinture patinée assortie.</span></span></p>
+        <a class="btn" href="#visite">En savoir plus en boutique</a>
       </div>
     </div>
   </div>
